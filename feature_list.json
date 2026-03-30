@@ -167,7 +167,7 @@
       "id": 24,
       "name": "Pitch deck (Sequoia template)",
       "category": "presentation",
-      "passes": false,
+      "passes": true,
       "day": 10
     },
     {

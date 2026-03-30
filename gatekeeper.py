@@ -75,6 +75,9 @@ class Gatekeeper:
             passed = False
             reasons.append(f"Max drawdown {max_dd:.1f}% > {self.MAX_ALLOWED_DRAWDOWN:.1f}%")
 
+        if refusal_rate < self.MIN_REFUSAL_RATE and total_entries > 5:
+            reasons.append(f"Warning: refusal rate {refusal_rate*100:.0f}% < {self.MIN_REFUSAL_RATE*100:.0f}% (not blocking)")
+
         if passed:
             reasons.append(f"Strategy passed all thresholds. Score: {score:.0f}/100")
 

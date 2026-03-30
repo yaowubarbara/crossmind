@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CrossMind Pitch Deck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #e0e0e0; font-family: Arial, sans-serif; }
+
+  .slide {
+    width: 1280px; height: 720px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 60px; margin: 20px auto;
+    background: #0a0a1a; border: 1px solid #1e1e3a;
+    page-break-after: always;
+  }
+
+  h1 { font-size: 48px; background: linear-gradient(135deg, #10b981, #f59e0b);
+       -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px; }
+  h2 { font-size: 36px; color: #10b981; margin-bottom: 24px; }
+  h3 { font-size: 24px; color: #f59e0b; margin-bottom: 16px; }
+  p { font-size: 20px; color: #ccc; line-height: 1.6; max-width: 900px; text-align: center; }
+  .stat { font-size: 72px; font-weight: 700; font-family: monospace; }
+  .green { color: #44ff44; }
+  .gold { color: #f59e0b; }
+  .red { color: #ff4444; }
+  .left { text-align: left; align-items: flex-start; }
+  .left p { text-align: left; }
+  ul { font-size: 20px; color: #ccc; line-height: 2; list-style: none; }
+  ul li::before { content: "→ "; color: #10b981; }
+
+  table { border-collapse: collapse; margin-top: 16px; }
+  table th { background: #1e1e3a; color: #10b981; padding: 10px 20px; text-align: left; }
+  table td { border-bottom: 1px solid #1e1e3a; padding: 10px 20px; color: #ccc; }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide">
+  <h1>CrossMind</h1>
+  <p style="font-size: 24px; color: #888; font-style: italic;">
+    "A red-teamed transparent trading agent that proves not only how it trades, but when it refuses to trade."
+  </p>
+  <p style="margin-top: 30px; font-size: 16px; color: #666;">
+    AI Trading Agents Hackathon | lablab.ai | March 2026<br>
+    Built with Kraken CLI
+  </p>
+</div>
+
+<!-- Slide 2: Problem -->
+<div class="slide">
+  <h2>The Problem</h2>
+  <div class="stat red">73%</div>
+  <p>of AI trading bots fail within 6 months.</p>
+  <p style="margin-top: 20px; color: #888;">
+    They look great in backtests. They collapse in live markets.<br>
+    Nobody asks: <strong style="color: #f59e0b;">"When should this bot NOT trade?"</strong>
+  </p>
+</div>
+
+<!-- Slide 3: Solution -->
+<div class="slide">
+  <h2>CrossMind: Survival First, Profit Second</h2>
+  <p>Before any strategy touches capital, it must survive our War Room.</p>
+  <div style="margin-top: 30px; font-size: 22px; font-family: monospace; color: #10b981;">
+    War Room → Gatekeeper → Live Execution → Trust Ledger
+  </div>
+  <p style="margin-top: 20px;">
+    Every trade AND every refusal is recorded with verifiable proof.
+  </p>
+</div>
+
+<!-- Slide 4: War Room -->
+<div class="slide left">
+  <h2>War Room: Adversarial Stress Testing</h2>
+  <ul>
+    <li>Replays real market crashes (FTX collapse, Japan carry trade unwind)</li>
+    <li>Adversary Agent finds and exploits strategy weaknesses</li>
+    <li>Strategies that fail are killed — only survivors proceed</li>
+    <li>Uses actual Kraken OHLC data, not synthetic scenarios</li>
+  </ul>
+  <div style="margin-top: 20px;">
+    <span class="green" style="font-size: 36px; font-weight: bold;">4/4</span>
+    <span style="color: #888; font-size: 20px;"> scenarios survived in latest run</span>
+  </div>
+</div>
+
+<!-- Slide 5: Refusal Proof -->
+<div class="slide">
+  <h2>The Core Innovation: Refusal Proof</h2>
+  <p>Most bots show when they trade. CrossMind shows when it <strong style="color: #f59e0b;">refuses</strong>.</p>
+  <div style="background: #1a1000; border: 1px solid #f59e0b; border-radius: 12px; padding: 20px; margin-top: 20px; max-width: 800px; text-align: left;">
+    <div style="color: #f59e0b; font-weight: bold;">REFUSE — BUY 0.015 BTC/USD @ $67,432</div>
+    <div style="color: #ccc; margin-top: 8px; font-size: 16px;">
+      Reason: Portfolio drawdown 4.8% approaching 5% circuit breaker.<br>
+      2 consecutive losses suggest unfavorable conditions.<br>
+      <span style="color: #44ff44;">Refusal Impact: Saved an estimated $2,340</span>
+    </div>
+    <div style="color: #666; margin-top: 8px; font-size: 14px; font-family: monospace;">
+      Hash: d91e4f...2c83a7 ← prev: a3f8c2...7b91d4
+    </div>
+  </div>
+</div>
+
+<!-- Slide 6: Architecture -->
+<div class="slide left">
+  <h2>4-Agent Architecture</h2>
+  <table>
+    <tr><th>Agent</th><th>Type</th><th>Role</th></tr>
+    <tr><td>Analyst</td><td style="color: #10b981;">Deterministic</td><td>RSI calculation, market indicators</td></tr>
+    <tr><td>Strategist</td><td style="color: #10b981;">Deterministic</td><td>Trade signal generation</td></tr>
+    <tr><td>Risk Manager</td><td style="color: #f59e0b;">LLM Agent</td><td>Approve/refuse trades with reasoning</td></tr>
+    <tr><td>Adversary</td><td style="color: #f59e0b;">LLM Agent</td><td>Red team: finds strategy weaknesses</td></tr>
+  </table>
+  <p style="margin-top: 16px; font-size: 16px;">
+    Deterministic where precision matters. AI where judgment matters.
+  </p>
+</div>
+
+<!-- Slide 7: Kraken CLI -->
+<div class="slide left">
+  <h2>Deep Kraken CLI Integration</h2>
+  <ul>
+    <li><code style="color: #f59e0b;">kraken paper</code> — Safe strategy testing with live prices</li>
+    <li><code style="color: #f59e0b;">kraken order cancel-after</code> — Dead Man's Switch protection</li>
+    <li><code style="color: #f59e0b;">kraken ohlc</code> — Historical data for War Room replay</li>
+    <li><code style="color: #f59e0b;">kraken ticker</code> — Real-time market data</li>
+    <li><code style="color: #f59e0b;">kraken mcp</code> — Native AI agent integration</li>
+  </ul>
+  <p style="margin-top: 16px; font-size: 16px;">
+    Plus: slippage modeling, fee accounting, time-of-day filters
+  </p>
+</div>
+
+<!-- Slide 8: Business -->
+<div class="slide">
+  <h2>Who Needs This?</h2>
+  <table>
+    <tr><th>Customer</th><th>Pain Point</th></tr>
+    <tr><td>DAO Treasuries</td><td>Need transparent, auditable capital management</td></tr>
+    <tr><td>Small Crypto Funds</td><td>LPs demand proof of risk controls</td></tr>
+    <tr><td>Independent Traders</td><td>Lost money on 3 bots, don't trust AI anymore</td></tr>
+    <tr><td>Compliance Teams</td><td>Need audit trail for every trading decision</td></tr>
+  </table>
+  <p style="margin-top: 20px;">
+    <strong style="color: #10b981;">CrossMind is a capital protection layer for autonomous trading.</strong>
+  </p>
+</div>
+
+<!-- Slide 9: Close -->
+<div class="slide">
+  <h1>CrossMind</h1>
+  <p style="font-size: 28px; color: #f59e0b;">
+    Not just a trading bot.<br>
+    A capital protection system that happens to trade.
+  </p>
+  <p style="margin-top: 30px; font-size: 18px; color: #888;">
+    github.com/yaowubarbara/crossmind<br>
+    Built with Kraken CLI | AI Trading Agents Hackathon
+  </p>
+</div>
+
+</body>
+</html>

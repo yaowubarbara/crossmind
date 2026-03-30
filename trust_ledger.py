@@ -167,9 +167,10 @@ class TrustLedger:
         for entry in self.entries:
             if entry.prev_hash != expected_prev:
                 return False
-            # Recompute hash
+            # Recompute hash — exclude refusal_impact (added after initial hash)
             data = asdict(entry)
             del data["entry_hash"]
+            data["refusal_impact"] = None  # Impact is added later, not part of original hash
             computed = self._compute_hash(data)
             if computed != entry.entry_hash:
                 return False

@@ -30,12 +30,19 @@ class PortfolioState:
     losing_trades: int = 0
     circuit_breaker_active: bool = False
 
+    _current_market_price: float = 0.0
+
+    def update_market_price(self, price: float):
+        """Update current market price for real-time P&L calculation."""
+        self._current_market_price = price
+
     @property
     def total_value(self) -> float:
-        """Total portfolio value (cash + positions at current price)."""
-        # For simplicity, use entry price for position value
-        # In live mode, this would use current market price
-        position_value = sum(p.entry_price * p.volume for p in self.positions)
+        """Total portfolio value (cash + positions at current market price)."""
+        if self._current_market_price > 0 and self.positions:
+            position_value = sum(self._current_market_price * p.volume for p in self.positions)
+        else:
+            position_value = sum(p.entry_price * p.volume for p in self.positions)
         return self.cash + position_value
 
     @property

@@ -6,7 +6,6 @@ Strategy agents must survive or they die.
 
 import json
 import os
-import requests
 from datetime import datetime, timezone
 from typing import Optional
 

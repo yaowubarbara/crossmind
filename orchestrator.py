@@ -166,8 +166,8 @@ class Orchestrator:
                 order_type="market",
             )
 
-            fill_price = result.get("price", price)
-            fee = result.get("fee", 0)
+            fill_price = float(result.get("price", price))
+            fee = float(result.get("fee", 0))
             order_id = result.get("order_id", "")
 
             self.portfolio.open_position(
