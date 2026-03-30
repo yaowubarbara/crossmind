@@ -55,13 +55,31 @@
 - [x] Pitch deck created (9 slides)
 - [x] README complete with Quick Start
 
-## Status: 24/25 FEATURES COMPLETE
-- GitHub: github.com/yaowubarbara/crossmind (latest pushed)
-- Claude live evidence: approval + refusal samples in evidence/
-- All smoke tests passing
+## Day 8 — 10-Expert Strategy + War Room Expansion
+- [x] 10 expert agents consulted
+- [x] War Room: 3 → 6 scenarios (all survived, max DD 1.9%)
+- [x] A/B test script, DEMO_MODE, cached data for deployment
+- [x] Kraken account registration started
 
-## Remaining
-- [ ] #25 Final submission to lablab.ai + surge.xyz (needs YouTube video)
+### War Room Final Results (6 scenarios):
+- Japan Carry Trade (-24%): -$191, 4 REFUSALS
+- Iran-Israel (-13%): $0
+- Tariff Scare (-13%): +$53
+- Year-End Selloff (-43%): -$3
+- March Correction (-26%): +$93
+- Summer Grind (-18%): -$40
+- **6/6 survived, 8 trades, 4 refusals**
+
+## Status: 24/25 FEATURES COMPLETE
+- GitHub: github.com/yaowubarbara/crossmind
+
+## Remaining (Day 3+)
+- [ ] Deploy dashboard to HuggingFace Spaces
+- [ ] Kraken API key config (pending registration)
+- [ ] ERC-8004 integration (optional, +$15K eligibility)
+- [ ] Record 3-min YouTube video
+- [ ] Register project on surge.xyz
+- [ ] #25 Final submission to lablab.ai
 
 ## Files
 ```
