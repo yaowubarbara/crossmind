@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-30T07:06:41.790036+00:00",
+  "timestamp": "2026-03-30T07:46:03.926968+00:00",
   "entry_id": 2,
   "intent": {
     "action": "BUY",
@@ -22,6 +22,6 @@
   },
   "refusal_proof": null,
   "refusal_impact": null,
-  "prev_hash": "00fbd1bf2ec85a3570780fab4b2a8496c1da68a6490d40bc4451c6aa076a8e4d",
-  "entry_hash": "59c4a37e351e0bfce12123f862638beea85c08cfd95a794d503c6399ebe3a49b"
+  "prev_hash": "039121a7ddbe2e28ae19a5cfd42126e9297e836d4d1b2861a5614db457a79386",
+  "entry_hash": "e6cafe903b1a4fbc394c6b98d23d1bc556db67d25ba8ce7892b71b37bd097ffc"
 }

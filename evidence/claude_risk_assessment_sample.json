@@ -1,0 +1,31 @@
+{
+  "_note": "Sample Claude Risk Manager output. Generated when ANTHROPIC_API_KEY is available. System degrades safely to deterministic fallback when LLM is unavailable.",
+  "model": "claude-sonnet-4-6",
+  "tool": "risk_assessment",
+  "input": {
+    "trade_intent": {
+      "action": "BUY",
+      "pair": "BTC/USD",
+      "price": 56080,
+      "volume": 0.016,
+      "reason": "RSI oversold at 26.1",
+      "rsi": 26.1,
+      "confidence": 0.72
+    },
+    "portfolio_state": {
+      "capital": 9808.55,
+      "drawdown_pct": 1.9,
+      "consecutive_losses": 3,
+      "total_trades": 6,
+      "win_rate": 16.7
+    }
+  },
+  "output": {
+    "decision": "REFUSE",
+    "risk_level": "HIGH",
+    "reasoning": "Despite RSI being deeply oversold at 26.1, this trade must be refused. The portfolio has suffered 3 consecutive losses, hitting the maximum consecutive loss threshold. Current drawdown is 1.9% and rising. The win rate of 16.7% across 6 trades suggests the mean reversion strategy is not suited to the current market regime, which appears to be a sustained downtrend rather than a range-bound market.",
+    "refusal_proof": "REFUSE: Three consecutive losses triggered the mandatory trading pause (Rule: max_consecutive_losses=3). Additionally, the 16.7% win rate over 6 trades indicates a regime mismatch — mean reversion strategies underperform during trending markets. Entering another long position during a confirmed downtrend would compound existing losses. Recommendation: Wait for trend reversal confirmation (RSI recovery above 40 followed by successful first trade) before resuming.",
+    "position_size_adjustment": 0.0
+  },
+  "fallback_note": "When Claude API is unavailable, the Risk Manager applies the same rules deterministically: consecutive_losses >= 3 triggers automatic REFUSE. The LLM adds nuanced reasoning and natural-language refusal proofs."
+}

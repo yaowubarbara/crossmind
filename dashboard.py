@@ -59,7 +59,32 @@ def load_war_room_results():
 
 # Header
 st.title("CrossMind")
-st.caption("*Proves not only how it trades, but when it refuses to trade.*")
+st.caption("*A red-teamed transparent trading agent that proves when refusing to trade protects capital.*")
+
+# Hero metrics — Refusal Impact front and center
+entries = load_ledger()
+if entries:
+    refusals = [e for e in entries if e["decision"] == "REFUSE"]
+    total_saved = sum(
+        e.get("refusal_impact", {}).get("would_have_lost", 0)
+        for e in refusals if e.get("refusal_impact")
+    )
+    hero1, hero2, hero3, hero4 = st.columns(4)
+    with hero1:
+        st.metric("Total Refusals", f"🛡️ {len(refusals)}")
+    with hero2:
+        st.metric("Capital Saved by Refusals", f"${total_saved:,.2f}")
+    with hero3:
+        executions = [e for e in entries if e["decision"] == "EXECUTE"]
+        refusal_rate = len(refusals) / max(1, len(entries)) * 100
+        st.metric("Refusal Rate", f"{refusal_rate:.0f}%")
+    with hero4:
+        st.metric("Trust Ledger Entries", f"{len(entries)}")
+
+    if total_saved > 0:
+        st.success(f"CrossMind has avoided an estimated **${total_saved:,.2f}** in potential losses by refusing unsafe trades.")
+
+st.divider()
 
 # Tabs
 tab1, tab2, tab3, tab4 = st.tabs(["📊 Live Status", "🛡️ Trust Ledger", "⚔️ War Room", "📐 Architecture"])

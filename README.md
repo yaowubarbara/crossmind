@@ -1,8 +1,10 @@
 # CrossMind
 
-**A red-teamed transparent trading agent that proves not only how it trades, but when it refuses to trade.**
+**A red-teamed transparent trading agent that proves when refusing to trade protects capital.**
 
-CrossMind is a capital protection system that stress-tests trading strategies against real historical market crashes before deploying them. Every trade — and every refusal — is recorded in a verifiable Trust Ledger with SHA-256 hash chain integrity.
+*Built with Kraken CLI for execution and a verifiable Trust Ledger for auditability.*
+
+CrossMind has avoided an estimated **$17.30** in potential losses by refusing unsafe trades during adversarial stress testing. It survived **4 out of 4** historical crash scenarios including the 2024 Japan Carry Trade Unwind (BTC -24%).
 
 ## The Problem
 
