@@ -26,7 +26,8 @@ def run_48h():
     print(f"[48H Runner] Starting {duration_hours}h paper trading run")
     print(f"[48H Runner] Check interval: {check_interval}s ({check_interval // 60} min)")
     print(f"[48H Runner] Max iterations: {max_iterations}")
-    print(f"[48H Runner] Started at: {datetime.now(timezone.utc).isoformat()}")
+    start_time = datetime.now(timezone.utc).isoformat()
+    print(f"[48H Runner] Started at: {start_time}")
 
     # Log to file
     log_file = "paper_trading_48h.log"
@@ -44,9 +45,11 @@ def run_48h():
     )
 
     # Save final results
+    end_time = datetime.now(timezone.utc).isoformat()
     results = {
         "duration_hours": duration_hours,
-        "started": datetime.now(timezone.utc).isoformat(),
+        "started": start_time,
+        "ended": end_time,
         "portfolio": orch.portfolio.to_dict(),
         "ledger_stats": orch.ledger.get_stats(),
         "trade_history": orch.portfolio.trade_history,

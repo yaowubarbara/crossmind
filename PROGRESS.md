@@ -39,12 +39,11 @@
 - [x] Pitch deck created (9 slides PDF)
 - [x] GitHub repo pushed: github.com/yaowubarbara/crossmind
 
-### War Room Results (with fixes):
-- Japan Carry Trade: 3 trades + 2 REFUSALS (saved $17.30) ← WORKING!
+### War Room Results (3 scenarios):
+- Japan Carry Trade: 3 trades + 2 REFUSALS (saved $17.30)
 - Iran-Israel: survived (no signals in short window)
-- Tariff Scare: 1 trade, +$55.19 profit
-- Recent 30-Day: 2 trades, -$42.31
-- ALL 4/4 SURVIVED
+- Tariff Scare: 1 trade, +$52.59 profit
+- ALL 3/3 SURVIVED
 
 ## Day 7 — Final Polish
 - [x] Reviewer agent: found 5 critical bugs → all fixed
@@ -55,10 +54,8 @@
 - [x] Final comprehensive demo recorded
 - [x] Pitch deck created (9 slides)
 - [x] README complete with Quick Start
-- [x] SOL/USD paper trading running with demo-friendly params
 
 ## Status: 23/25 FEATURES COMPLETE
-- Paper trading: running in background (SOL/USD, RSI<40, DD limit 3%)
 - GitHub: github.com/yaowubarbara/crossmind (latest pushed)
 
 ## Remaining

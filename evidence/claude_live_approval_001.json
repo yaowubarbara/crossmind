@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "type": "live_claude_risk_assessment",
+    "model": "claude-sonnet-4-6",
+    "recorded": "2026-03-30T14:18:03Z",
+    "note": "Actual Claude API response during War Room Tariff Scare scenario"
+  },
+  "input": {
+    "trade_intent": {
+      "action": "BUY",
+      "pair": "BTC/USD",
+      "price": 92611,
+      "volume": 0.0108,
+      "reason": "RSI oversold at 27.4 on daily timeframe",
+      "rsi": 27.4,
+      "confidence": 0.68
+    },
+    "portfolio_state": {
+      "capital": 10000.00,
+      "cash": 10000.00,
+      "drawdown_pct": 0.0,
+      "consecutive_losses": 0,
+      "open_positions": 0,
+      "total_trades": 0,
+      "win_rate": 0.0,
+      "circuit_breaker": false
+    }
+  },
+  "output": {
+    "decision": "APPROVE",
+    "risk_level": "LOW",
+    "reasoning": "First trade of the session with zero drawdown and zero consecutive losses. RSI at 27.4 is below the 28 threshold, indicating oversold conditions. The proposed position size of 0.0108 BTC ($1,000) represents approximately 10% of capital, which is within the maximum position limit. All risk thresholds are clear. Approving with full position size.",
+    "refusal_proof": null,
+    "position_size_adjustment": 1.0
+  }
+}

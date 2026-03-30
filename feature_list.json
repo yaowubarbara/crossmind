@@ -62,7 +62,7 @@
       "id": 9,
       "name": "Risk Manager connected to Claude API (live test)",
       "category": "risk",
-      "passes": false,
+      "passes": true,
       "day": 2
     },
     {

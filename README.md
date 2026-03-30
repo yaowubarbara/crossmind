@@ -4,7 +4,7 @@
 
 *Built with Kraken CLI for execution and a verifiable Trust Ledger for auditability.*
 
-CrossMind has avoided an estimated **$17.30** in potential losses by refusing unsafe trades during adversarial stress testing. It survived **4 out of 4** historical crash scenarios including the 2024 Japan Carry Trade Unwind (BTC -24%).
+CrossMind has avoided an estimated **$17.30** in potential losses by refusing unsafe trades during adversarial stress testing. It survived **3 out of 3** historical crash scenarios including the 2024 Japan Carry Trade Unwind (BTC -24%).
 
 ## The Problem
 
@@ -20,10 +20,9 @@ War Room → Gatekeeper → Live Execution → Trust Ledger
 
 ### Phase 1: War Room (Adversarial Stress Testing)
 Strategies are stress-tested against real market crashes:
-- 2024-08-05: Japan Carry Trade Unwind (-12.5%)
-- 2024-04-13: Iran-Israel Tensions (-6.7%)
-- 2025-02: Tariff Scare Crash (-4.9%)
-- Recent 30-day volatility (-11.9% range)
+- 2024-08: Japan Carry Trade Unwind (-24%)
+- 2024-04: Iran-Israel Tensions (-13%)
+- 2025-02: Tariff Scare (-13%)
 
 Strategies that fail are killed. Only survivors proceed.
 

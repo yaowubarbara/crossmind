@@ -3,8 +3,6 @@
 # Trading pair — unified across all files
 PAIR = "BTC/USD"
 PAIR_KRAKEN = "BTCUSD"
-# Note: demo paper trading may use SOL/USD for faster signal generation
-# War Room always uses BTC/USD historical data
 
 # Strategy parameters (from quant expert)
 RSI_PERIOD = 14
