@@ -1,0 +1,15 @@
+{
+  "balances": {
+    "BTC": {
+      "available": 0.009999999999999998,
+      "reserved": 0.0,
+      "total": 0.009999999999999998
+    },
+    "USD": {
+      "available": 9313.59009989333,
+      "reserved": 0.0,
+      "total": 9313.59009989333
+    }
+  },
+  "mode": "paper"
+}

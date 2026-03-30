@@ -1,6 +1,11 @@
 """CrossMind Dashboard — Streamlit-based visualization.
 
 Shows: live status, trading decisions, refusal proofs, War Room results.
+
+Supports two modes:
+  - Live mode: uses Kraken CLI for real-time data
+  - Demo mode: uses cached JSON data (for deployment without Kraken CLI)
+    Set CROSSMIND_DEMO=true environment variable to enable.
 """
 
 import streamlit as st
@@ -8,6 +13,8 @@ import json
 import os
 import hashlib
 from datetime import datetime
+
+DEMO_MODE = os.environ.get("CROSSMIND_DEMO", "false").lower() == "true"
 
 # Page config
 st.set_page_config(
@@ -92,42 +99,45 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊 Live Status", "🛡️ Trust Ledger", "�
 with tab1:
     st.subheader("Live Trading Status")
 
-    # Try to get live data
     try:
-        from kraken_client import KrakenClient
-        from signal_generator import compute_rsi
-        import config
-
-        client = KrakenClient()
-        ticker = client.ticker()
-        candles = client.ohlc(pair=config.PAIR_KRAKEN, interval=config.CANDLE_INTERVAL)
-        closes = [c["close"] for c in candles]
-        rsi = compute_rsi(closes)
-        balance = client.paper_balance()
+        if DEMO_MODE:
+            # Load cached data
+            ticker = json.load(open("demo_data/ticker.json"))
+            rsi_data = json.load(open("demo_data/rsi.json"))
+            rsi = rsi_data["rsi"]
+            balance_data = json.load(open("demo_data/balance.json"))
+            usd_bal = balance_data.get("balances", {}).get("USD", {}).get("total", 10000)
+        else:
+            from kraken_client import KrakenClient
+            from signal_generator import compute_rsi
+            import config
+            client = KrakenClient()
+            ticker = client.ticker()
+            candles = client.ohlc(pair=config.PAIR_KRAKEN, interval=config.CANDLE_INTERVAL)
+            closes = [c["close"] for c in candles]
+            rsi = compute_rsi(closes)
+            balance_data = client.paper_balance()
+            usd_bal = balance_data.get("balances", {}).get("USD", {}).get("total", 0)
 
         col1, col2, col3, col4 = st.columns(4)
         with col1:
             st.metric("BTC/USD", f"${ticker['last']:,.2f}",
-                      f"{((ticker['last'] - ticker['open']) / ticker['open'] * 100):+.2f}%")
+                      f"{((ticker['last'] - ticker.get('open', ticker['last'])) / ticker.get('open', ticker['last']) * 100):+.2f}%")
         with col2:
             rsi_color = "🔴" if rsi < 28 else "🟢" if rsi > 65 else "🟡"
             st.metric("RSI (14)", f"{rsi_color} {rsi}")
         with col3:
-            usd_bal = balance.get("balances", {}).get("USD", {}).get("total", 0)
             st.metric("Paper Balance", f"${usd_bal:,.2f}")
         with col4:
-            signal = "HOLD"
-            if rsi < 28:
-                signal = "🟢 BUY"
-            elif rsi > 65:
-                signal = "🔴 SELL"
-            else:
-                signal = "⬜ HOLD"
+            signal = "🟢 BUY" if rsi < 28 else "🔴 SELL" if rsi > 65 else "⬜ HOLD"
             st.metric("Signal", signal)
 
+        if DEMO_MODE:
+            st.caption("📡 Demo mode — showing cached market data")
+
     except Exception as e:
-        st.warning(f"Could not fetch live data: {e}")
-        st.info("Run the Orchestrator first to generate trading data.")
+        st.warning(f"Could not fetch data: {e}")
+        st.info("Set CROSSMIND_DEMO=true or run Kraken CLI locally.")
 
 with tab2:
     st.subheader("Trust Ledger — Every Decision Recorded")
