@@ -48,38 +48,39 @@ def apply_slippage(price: float, side: str, candles: list, idx: int) -> float:
 
 
 # Historical crash scenarios — use daily candles for older data
+# Use daily candles with 60-day windows to ensure enough RSI history
 CRASH_SCENARIOS = [
     {
-        "label": "2024-08-05 Japan Carry Trade Unwind",
-        "description": "BTC dropped 15% in 4 hours as Japanese Yen carry trade unwound",
+        "label": "2024-08 Japan Carry Trade Unwind",
+        "description": "BTC dropped 15% as Japanese Yen carry trade unwound. 60-day window.",
         "pair": "BTCUSD",
-        "start_ts": 1722729600,  # 2024-08-04 00:00:00 UTC
-        "end_ts": 1723075200,   # 2024-08-08 00:00:00 UTC
-        "interval": 1440,       # daily (4H not available this far back)
-    },
-    {
-        "label": "2024-04-13 Iran-Israel Tensions",
-        "description": "BTC dropped 8% in 2 hours on geopolitical fears",
-        "pair": "BTCUSD",
-        "start_ts": 1712966400,  # 2024-04-13 00:00:00 UTC
-        "end_ts": 1713398400,   # 2024-04-18 00:00:00 UTC
+        "start_ts": 1717200000,  # 2024-06-01 (60 days before crash)
+        "end_ts": 1723075200,   # 2024-08-08
         "interval": 1440,
     },
     {
-        "label": "2025-02 Tariff Scare Crash",
-        "description": "BTC dropped 10% on US tariff announcement fears",
+        "label": "2024-04 Iran-Israel Tensions",
+        "description": "BTC dropped 8% on geopolitical fears. 60-day window.",
         "pair": "BTCUSD",
-        "start_ts": 1738368000,  # 2025-02-01
+        "start_ts": 1707782400,  # 2024-02-13 (60 days before)
+        "end_ts": 1713398400,   # 2024-04-18
+        "interval": 1440,
+    },
+    {
+        "label": "2025-02 Tariff Scare",
+        "description": "BTC dropped 10% on US tariff announcement. 60-day window.",
+        "pair": "BTCUSD",
+        "start_ts": 1733184000,  # 2024-12-03 (60 days before)
         "end_ts": 1739059200,   # 2025-02-09
         "interval": 1440,
     },
     {
         "label": "Recent 30-Day Volatility",
-        "description": "Last 30 days of 4H candles — real current market",
+        "description": "Last 30 days of 4H candles — real current market.",
         "pair": "BTCUSD",
-        "start_ts": None,  # Use recent data
+        "start_ts": None,
         "end_ts": None,
-        "interval": 240,  # 4H available for recent data
+        "interval": 240,
     },
 ]
 
