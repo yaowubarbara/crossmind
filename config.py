@@ -26,27 +26,10 @@ NO_US_OPEN_TRADING = True    # Skip 13:30-15:00 UTC
 US_OPEN_START_UTC = 13.5     # 13:30
 US_OPEN_END_UTC = 15.0       # 15:00
 
-# War Room scenarios (historical crashes)
-WAR_ROOM_SCENARIOS = [
-    {
-        "label": "2024-08-05 Japan Carry Trade Unwind",
-        "pair": "BTCUSD",
-        "start": "2024-08-05T00:00:00Z",
-        "end": "2024-08-06T00:00:00Z",
-    },
-    {
-        "label": "2024-04-13 Iran-Israel Tensions",
-        "pair": "BTCUSD",
-        "start": "2024-04-13T00:00:00Z",
-        "end": "2024-04-14T00:00:00Z",
-    },
-    {
-        "label": "2022-11-09 FTX Collapse",
-        "pair": "BTCUSD",
-        "start": "2022-11-08T00:00:00Z",
-        "end": "2022-11-11T00:00:00Z",
-    },
-]
+# War Room scenarios — unified with war_room.py (3 scenarios, daily candles, 60-day windows)
+# Actual scenario definitions are in war_room.py CRASH_SCENARIOS
+# These are kept here for reference only
+WAR_ROOM_SCENARIO_COUNT = 3
 
 # Slippage modeling
 SLIPPAGE_NORMAL_BPS = 7       # 7 basis points normal

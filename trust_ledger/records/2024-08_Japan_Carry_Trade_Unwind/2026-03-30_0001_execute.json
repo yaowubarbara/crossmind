@@ -1,6 +1,8 @@
 {
-  "timestamp": "2026-03-30T07:46:03.925540+00:00",
+  "timestamp": "2026-03-30T08:00:10.571355+00:00",
   "entry_id": 1,
+  "analyst_summary": null,
+  "strategist_proposal": null,
   "intent": {
     "action": "SELL",
     "pair": "BTC/USD",
@@ -19,6 +21,6 @@
   },
   "refusal_proof": null,
   "refusal_impact": null,
-  "prev_hash": "415ee058fbf57bd9f224622732b42418323a5b8c531ec511a7a6723a37f71e13",
-  "entry_hash": "039121a7ddbe2e28ae19a5cfd42126e9297e836d4d1b2861a5614db457a79386"
+  "prev_hash": "d53669510ee3c0542df59f32d9feddea353b55c87145b78175612bbc4ca4e017",
+  "entry_hash": "9a96a91e6acdc9493b4d980e44c462d71e41a75f2196540b7d342cc1edcc2dbe"
 }

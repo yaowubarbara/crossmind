@@ -1,0 +1,7 @@
+{
+  "selected_scenario": "2025-02 Tariff Scare",
+  "weakness_identified": "Strategy is overconfident with low drawdown",
+  "attack_reasoning": "The most volatile scenario will test whipsaw tolerance",
+  "expected_outcome": "Strategy may trigger circuit breaker or accumulate losses",
+  "kill_probability": 0.3
+}

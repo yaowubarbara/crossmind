@@ -11,11 +11,13 @@ import config
 
 @dataclass
 class LedgerEntry:
-    """A single trust ledger entry."""
+    """A single trust ledger entry — records every agent's contribution."""
     timestamp: str
     entry_id: int
+    analyst_summary: Optional[dict]   # Analyst agent's market assessment
+    strategist_proposal: Optional[dict]  # Strategist agent's trade proposal
     intent: dict                    # What the agent wanted to do
-    risk_check: dict                # Risk evaluation results
+    risk_check: dict                # Risk Manager's evaluation
     decision: str                   # "EXECUTE" or "REFUSE"
     result: Optional[dict]          # Execution result (if executed)
     refusal_proof: Optional[str]    # Why it refused (if refused)
@@ -58,12 +60,16 @@ class TrustLedger:
         return hashlib.sha256(b"CROSSMIND_GENESIS").hexdigest()
 
     def record_execution(self, intent: dict, risk_check: dict,
-                         result: dict) -> LedgerEntry:
+                         result: dict,
+                         analyst_summary: dict = None,
+                         strategist_proposal: dict = None) -> LedgerEntry:
         """Record a successful trade execution."""
         prev_hash = self._get_prev_hash()
         entry_data = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "entry_id": self.entry_counter,
+            "analyst_summary": analyst_summary,
+            "strategist_proposal": strategist_proposal,
             "intent": intent,
             "risk_check": risk_check,
             "decision": "EXECUTE",
@@ -80,12 +86,16 @@ class TrustLedger:
         return entry
 
     def record_refusal(self, intent: dict, risk_check: dict,
-                       refusal_proof: str) -> LedgerEntry:
+                       refusal_proof: str,
+                       analyst_summary: dict = None,
+                       strategist_proposal: dict = None) -> LedgerEntry:
         """Record a trade refusal with proof."""
         prev_hash = self._get_prev_hash()
         entry_data = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "entry_id": self.entry_counter,
+            "analyst_summary": analyst_summary,
+            "strategist_proposal": strategist_proposal,
             "intent": intent,
             "risk_check": risk_check,
             "decision": "REFUSE",

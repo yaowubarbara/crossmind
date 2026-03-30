@@ -217,20 +217,25 @@ with tab3:
 
     war_results = load_war_room_results()
     if not war_results:
-        st.info("Run `python war_room.py` to generate War Room results.")
+        st.warning("No War Room data. Run `python war_room.py` to generate results.")
+    else:
+        survived = sum(1 for r in war_results if r.get("survived"))
+        total = len(war_results)
+        st.metric("Survival Score", f"{survived}/{total}")
 
-        # Show static results from last run
-        st.markdown("""
-        ### Last War Room Run
-        | Scenario | Result | Max Drawdown | Trades | Refusals |
-        |----------|--------|-------------|--------|----------|
-        | 2024-08-05 Japan Carry Trade | ✅ Survived | 0.0% | 0 | 0 |
-        | 2024-04-13 Iran-Israel | ✅ Survived | 0.0% | 0 | 0 |
-        | 2025-02 Tariff Scare | ✅ Survived | 0.0% | 0 | 0 |
-        | Recent 30-Day | ✅ Survived | 0.4% | 2 | 0 |
-
-        **Survival Score: 4/4** ✅
-        """)
+        for r in war_results:
+            status = "✅ Survived" if r.get("survived") else "❌ Failed"
+            if r.get("circuit_breaker"):
+                status = "🛑 Circuit Breaker"
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.write(f"**{r.get('scenario', 'Unknown')}**")
+            with col2:
+                st.write(status)
+            with col3:
+                st.write(f"DD: {r.get('max_drawdown', 0):.1f}%")
+            with col4:
+                st.write(f"Refusals: {r.get('refusals', 0)}")
 
 with tab4:
     st.subheader("4-Agent Architecture")

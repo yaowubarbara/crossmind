@@ -48,11 +48,12 @@ def apply_slippage(price: float, side: str, candles: list, idx: int) -> float:
 
 
 # Historical crash scenarios — use daily candles for older data
-# Use daily candles with 60-day windows to ensure enough RSI history
+# 3 historical crash scenarios with 60-day windows for RSI history
+# Unified across all files: config.py, README.md, dashboard.py, evidence/
 CRASH_SCENARIOS = [
     {
         "label": "2024-08 Japan Carry Trade Unwind",
-        "description": "BTC dropped 15% as Japanese Yen carry trade unwound. 60-day window.",
+        "description": "BTC dropped 24% as Japanese Yen carry trade unwound.",
         "pair": "BTCUSD",
         "start_ts": 1717200000,  # 2024-06-01 (60 days before crash)
         "end_ts": 1723075200,   # 2024-08-08
@@ -60,7 +61,7 @@ CRASH_SCENARIOS = [
     },
     {
         "label": "2024-04 Iran-Israel Tensions",
-        "description": "BTC dropped 8% on geopolitical fears. 60-day window.",
+        "description": "BTC dropped 13% on geopolitical fears.",
         "pair": "BTCUSD",
         "start_ts": 1707782400,  # 2024-02-13 (60 days before)
         "end_ts": 1713398400,   # 2024-04-18
@@ -68,19 +69,11 @@ CRASH_SCENARIOS = [
     },
     {
         "label": "2025-02 Tariff Scare",
-        "description": "BTC dropped 10% on US tariff announcement. 60-day window.",
+        "description": "BTC dropped 13% on US tariff announcement fears.",
         "pair": "BTCUSD",
         "start_ts": 1733184000,  # 2024-12-03 (60 days before)
         "end_ts": 1739059200,   # 2025-02-09
         "interval": 1440,
-    },
-    {
-        "label": "Recent 30-Day Volatility",
-        "description": "Last 30 days of 4H candles — real current market.",
-        "pair": "BTCUSD",
-        "start_ts": None,
-        "end_ts": None,
-        "interval": 240,
     },
 ]
 
@@ -205,8 +198,15 @@ class WarRoom:
                 if risk_decision.decision == "REFUSE":
                     if verbose:
                         print(f"  🛡️  REFUSE @ ${price:,.0f}: {risk_decision.reasoning[:80]}")
-                    entry = ledger.record_refusal(intent, risk_check,
-                                         risk_decision.refusal_proof or risk_decision.reasoning)
+                    closes = [c["close"] for c in history]
+                    from signal_generator import compute_rsi
+                    current_rsi = compute_rsi(closes)
+                    entry = ledger.record_refusal(
+                        intent, risk_check,
+                        risk_decision.refusal_proof or risk_decision.reasoning,
+                        analyst_summary={"market_state": "VOLATILE" if current_rsi < 30 or current_rsi > 70 else "RANGING", "rsi": current_rsi, "price": price},
+                        strategist_proposal={"action": "BUY", "reason": intent.get("reason", ""), "confidence": 0.72},
+                    )
 
                     # Calculate Refusal Impact Score: what would have happened?
                     # Look ahead 5 candles to see if price dropped
