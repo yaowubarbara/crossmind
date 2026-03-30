@@ -46,10 +46,24 @@
 - Recent 30-Day: 2 trades, -$42.31
 - ALL 4/4 SURVIVED
 
+## Day 7 — Final Polish
+- [x] Reviewer agent: found 5 critical bugs → all fixed
+- [x] Advisor agent: War Room 60-day fix + dashboard improvements
+- [x] Adversary fallback uses actual scenario list
+- [x] Portfolio PnL includes entry fees
+- [x] Dashboard hash verification button added
+- [x] Final comprehensive demo recorded
+- [x] Pitch deck created (9 slides)
+- [x] README complete with Quick Start
+- [x] SOL/USD paper trading running with demo-friendly params
+
+## Status: 23/25 FEATURES COMPLETE
+- Paper trading: running in background (SOL/USD, RSI<40, DD limit 3%)
+- GitHub: github.com/yaowubarbara/crossmind (latest pushed)
+
 ## Remaining
-- [ ] #9 Claude API live test (needs ANTHROPIC_API_KEY)
-- [ ] #23 Demo video (3 min)
-- [ ] #25 Final submission to lablab.ai + surge.xyz
+- [ ] #9 Claude API live test (optional — fallback works)
+- [ ] #25 Final submission to lablab.ai + surge.xyz (needs YouTube video + surge project)
 
 ## Files
 ```

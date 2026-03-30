@@ -1,0 +1,13 @@
+[CrossMind] Initialized in live mode
+[CrossMind] Initial capital: $10,000.00
+[CrossMind] Dead Man's Switch ENABLED — orders auto-cancel if agent stops
+[Demo Mode] RSI buy<45, sell>55, DD limit 3.0%
+
+============================================================
+  CrossMind Live Paper Trading
+  Pair: BTC/USD | Interval: 120s
+  Max Drawdown: 3.0%
+============================================================
+
+  ⚡ Dead Man's Switch refreshed (60s)
+  BTC/USD $67,241.60 | RSI 58.7 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT  

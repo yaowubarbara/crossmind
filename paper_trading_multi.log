@@ -1,0 +1,15 @@
+[Multi] Pair: SOL/USD
+[Multi] RSI buy<40, sell>58
+[Multi] Drawdown limit: 3.0%
+[CrossMind] Initialized in live mode
+[CrossMind] Initial capital: $10,000.00
+[CrossMind] Dead Man's Switch ENABLED — orders auto-cancel if agent stops
+
+============================================================
+  CrossMind Live Paper Trading
+  Pair: SOL/USD | Interval: 120s
+  Max Drawdown: 3.0%
+============================================================
+
+  ⚡ Dead Man's Switch refreshed (60s)
+  SOL/USD $83.54 | RSI 52.52 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT  
