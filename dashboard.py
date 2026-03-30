@@ -133,6 +133,16 @@ with tab2:
             st.metric("Capital Saved", f"${saved:,.2f}")
 
         # Entries
+        # Hash chain verification button
+        st.divider()
+        if st.button("🔐 Verify Trust Ledger Integrity"):
+            from trust_ledger import TrustLedger
+            tl = TrustLedger()
+            if tl.verify_chain():
+                st.success("✅ SHA-256 hash chain is VALID. No tampering detected.")
+            else:
+                st.error("❌ Hash chain BROKEN. Data may have been tampered with.")
+
         st.divider()
         for entry in reversed(entries[-20:]):  # Show last 20
             is_refusal = entry["decision"] == "REFUSE"

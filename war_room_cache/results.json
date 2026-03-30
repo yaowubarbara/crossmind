@@ -1,0 +1,54 @@
+[
+  {
+    "scenario": "2024-08 Japan Carry Trade Unwind",
+    "survived": true,
+    "circuit_breaker": false,
+    "final_capital": 9808.55,
+    "pnl": -191.45,
+    "max_drawdown": 1.91,
+    "total_trades": 3,
+    "win_rate": 0.0,
+    "refusals": 2,
+    "refusal_rate": 25.0,
+    "chain_valid": true
+  },
+  {
+    "scenario": "2024-04 Iran-Israel Tensions",
+    "survived": true,
+    "circuit_breaker": false,
+    "final_capital": 10000.0,
+    "pnl": 0.0,
+    "max_drawdown": 0,
+    "total_trades": 0,
+    "win_rate": 0.0,
+    "refusals": 0,
+    "refusal_rate": 0.0,
+    "chain_valid": true
+  },
+  {
+    "scenario": "2025-02 Tariff Scare",
+    "survived": true,
+    "circuit_breaker": false,
+    "final_capital": 10052.59,
+    "pnl": 52.59,
+    "max_drawdown": 0,
+    "total_trades": 1,
+    "win_rate": 100.0,
+    "refusals": 0,
+    "refusal_rate": 0.0,
+    "chain_valid": true
+  },
+  {
+    "scenario": "Recent 30-Day Volatility",
+    "survived": true,
+    "circuit_breaker": false,
+    "final_capital": 9957.69,
+    "pnl": -42.31,
+    "max_drawdown": 0.42,
+    "total_trades": 2,
+    "win_rate": 0.0,
+    "refusals": 0,
+    "refusal_rate": 0.0,
+    "chain_valid": true
+  }
+]

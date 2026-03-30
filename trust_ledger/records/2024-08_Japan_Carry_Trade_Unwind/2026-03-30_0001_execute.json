@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-30T07:04:35.732509+00:00",
+  "timestamp": "2026-03-30T07:06:41.788639+00:00",
   "entry_id": 1,
   "intent": {
     "action": "SELL",
@@ -14,11 +14,11 @@
   "decision": "EXECUTE",
   "result": {
     "price": 63176.1,
-    "pnl": -34.49,
+    "pnl": -37.09,
     "fee": 2.5186986216010356
   },
   "refusal_proof": null,
   "refusal_impact": null,
-  "prev_hash": "4e33ce6eb4b35dbfa1e8d87325941628733492d87fedc3437a4f9a51ec537b1d",
-  "entry_hash": "30a3310a7dad795bbf35be56ccb6cdb05fa27ccc68001544d02e6083042fc7da"
+  "prev_hash": "5618a267602855b48ebb66e9e95e1a460f9fa4ab9620e2f944d628595b8552c3",
+  "entry_hash": "00fbd1bf2ec85a3570780fab4b2a8496c1da68a6490d40bc4451c6aa076a8e4d"
 }

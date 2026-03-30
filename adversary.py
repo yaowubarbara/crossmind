@@ -135,26 +135,25 @@ maximum damage. Be creative and ruthless.
 
     def _fallback_attack(self, state: dict, history: list, scenarios: list) -> dict:
         """Deterministic fallback attack selection."""
-        # Simple heuristic: if strategy has been winning, use the biggest crash
-        # If strategy has been losing, use the slow grind
         consecutive_losses = state.get("consecutive_losses", 0)
         drawdown = state.get("drawdown_pct", 0)
 
+        # Pick from actual available scenarios
+        if not scenarios:
+            scenarios = ["Unknown scenario"]
+
         if consecutive_losses == 0 and drawdown < 1:
-            # Strategy is comfortable → hit it with the biggest crash
-            selected = "Recent 30-Day Volatility"
+            selected = scenarios[-1] if scenarios else "Unknown"
             weakness = "Strategy is overconfident with low drawdown"
-            reasoning = "A volatile 30-day period with 11.9% range will test whipsaw tolerance"
+            reasoning = "The most volatile scenario will test whipsaw tolerance"
         elif consecutive_losses >= 2:
-            # Strategy is already struggling → slow grind to trigger circuit breaker
-            selected = "2025-02 Tariff Scare Crash"
+            selected = scenarios[min(2, len(scenarios) - 1)]
             weakness = "Strategy already has consecutive losses, close to circuit breaker"
             reasoning = "Slow bleed will push drawdown past 5% threshold"
         else:
-            # Default: flash crash
-            selected = "2024-08-05 Japan Carry Trade Unwind"
+            selected = scenarios[0] if scenarios else "Unknown"
             weakness = "Unknown — testing flash crash resilience"
-            reasoning = "12.5% sudden drop tests stop-loss execution and panic behavior"
+            reasoning = "Sudden drop tests stop-loss execution and panic behavior"
 
         return {
             "selected_scenario": selected,

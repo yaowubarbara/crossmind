@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-30T07:04:35.737590+00:00",
+  "timestamp": "2026-03-30T07:06:41.793755+00:00",
   "entry_id": 6,
   "intent": {
     "action": "BUY",
@@ -18,6 +18,6 @@
   "result": null,
   "refusal_proof": "Trading paused after 3 consecutive losses. Strategy may not suit current market conditions. Wait for market regime change or manual review.",
   "refusal_impact": null,
-  "prev_hash": "4c51bf900ae87ba4093308e03fccd19e29b1a1b70c1d340434029200af40dd94",
-  "entry_hash": "aba8a7726f893d9b6f6189066f232e1a759a298b29aa985f6f4ae3a668cfbbc9"
+  "prev_hash": "682ee163dc37cd77d9c93ed273d1057b6999a84cab0ca2e6a010a6b2fd2f3286",
+  "entry_hash": "f96390e211236a9fbb1c4b4103a7670973614ed69ae308e7edf10cd7b2257bb7"
 }

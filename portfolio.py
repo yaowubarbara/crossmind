@@ -90,7 +90,9 @@ class PortfolioState:
         revenue = price * pos.volume - fee
         self.cash += revenue
 
-        pnl = revenue - (pos.entry_price * pos.volume)
+        entry_cost = pos.entry_price * pos.volume
+        entry_fee = entry_cost * 0.0026  # approximate entry fee
+        pnl = revenue - entry_cost - entry_fee
 
         # Track wins/losses
         if pnl > 0:

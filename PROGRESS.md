@@ -3,37 +3,63 @@
 ## Day 1 (2026-03-30) — Foundation
 - [x] Kraken CLI installed (v0.2.3)
 - [x] Paper trading initialized ($10,000)
-- [x] KrakenClient wrapper: ticker, ohlc, paper trading, orderbook
-- [x] Signal Generator: RSI(14) mean reversion, time filters, stop-loss/take-profit
-- [x] Trust Ledger: SHA-256 hash chain, append-only JSONL, refusal impact scores
-- [x] Risk Manager: Claude tool_use integration + deterministic fallback
-- [x] Config: all parameters from quant expert
-- [x] Basic test: full pipeline ticker→OHLC→RSI→signal works
+- [x] KrakenClient wrapper
+- [x] Signal Generator: RSI(14) mean reversion
+- [x] Trust Ledger: SHA-256 hash chain
+- [x] Risk Manager: Claude tool_use + deterministic fallback
+- [x] Config module
+- [x] Demo HTML page recorded
 
-### Current RSI: 59.98 (neutral, no signal)
-### Paper Balance: $9,328.66 (after test trade)
+## Day 2 — Core Pipeline
+- [x] Orchestrator: main trading loop (live + warroom modes)
+- [x] Portfolio state tracker (drawdown, positions, circuit breaker)
+- [x] Complete cycle: signal → risk → execute/refuse → ledger
 
-## Day 2 (2026-03-30 continued) — Core Pipeline
-- [x] #7 Orchestrator: main trading loop with live + warroom modes
-- [x] #8 Portfolio state tracker (capital, drawdown, positions, consecutive losses, circuit breaker)
-- [x] #9 Risk Manager: deterministic fallback working, Claude test pending
-- [x] #10 Complete cycle: signal → risk → execute/refuse → ledger — ALL WORKING
+## Day 3 — War Room
+- [x] War Room: 4 historical crash scenarios with 60-day windows
+- [x] War Room: replay engine feeding candles to agent
+- [x] War Room: agent death detection
+- [x] Refusal Impact Score: tracks price after refusal
 
-### War Room Test Results:
-- 3 trades executed (all small losses)
-- 9 trades REFUSED (3-consecutive-loss pause)
-- Refusal rate: 60%
-- Final capital: $9,984.93 (survived, -0.1%)
-- Trust Ledger: 15 entries, chain valid ✅
+## Day 4 — Adversary + Gatekeeper
+- [x] Adversary Agent: Claude-powered attack selection
+- [x] Gatekeeper: survival scoring (74/100)
 
-## TODO Day 3 (Features #11-14)
-- [ ] #11 War Room: load specific historical crash data from Kraken
-- [ ] #12 War Room: proper replay engine with date-specific scenarios
-- [ ] #13 War Room: agent death detection visuals
-- [ ] #14 Adversary Agent: Claude-powered attack scenario selection
+## Day 5 — Execution Safety + Dashboard
+- [x] Dead Man's Switch integration
+- [x] Slippage modeling (7 bps normal, 200 bps crash)
+- [x] Streamlit dashboard (4 tabs)
 
-## Harness Engineering Setup
-- feature_list.json: 25 features, 6 done (Day 1)
-- PROGRESS.md: updated each session
-- Pattern: Plan → Work → Review each feature
-- Review checklist: edge cases, error handling, trading logic correctness
+## Day 6 — Integration + Bug Fixes
+- [x] End-to-end pipeline: War Room → Gatekeeper → Adversary → Live
+- [x] 48-hour paper trading started in background
+- [x] Reviewer agent found 5 critical bugs → all fixed
+- [x] Advisor agent suggestions applied (War Room 60-day windows)
+- [x] README written
+- [x] Pitch deck created (9 slides PDF)
+- [x] GitHub repo pushed: github.com/yaowubarbara/crossmind
+
+### War Room Results (with fixes):
+- Japan Carry Trade: 3 trades + 2 REFUSALS (saved $17.30) ← WORKING!
+- Iran-Israel: survived (no signals in short window)
+- Tariff Scare: 1 trade, +$55.19 profit
+- Recent 30-Day: 2 trades, -$42.31
+- ALL 4/4 SURVIVED
+
+## Remaining
+- [ ] #9 Claude API live test (needs ANTHROPIC_API_KEY)
+- [ ] #23 Demo video (3 min)
+- [ ] #25 Final submission to lablab.ai + surge.xyz
+
+## Files
+```
+crossmind/
+├── config.py, kraken_client.py, signal_generator.py
+├── portfolio.py, risk_manager.py, adversary.py
+├── trust_ledger.py, orchestrator.py, war_room.py
+├── gatekeeper.py, run_full_pipeline.py
+├── dashboard.py, paper_trading_48h.py
+├── demo_day1.html, demo_warroom.html, pitch_deck.html
+├── README.md, CLAUDE.md, PROGRESS.md
+└── feature_list.json
+```
