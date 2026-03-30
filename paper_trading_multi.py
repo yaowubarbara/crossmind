@@ -1,4 +1,5 @@
-"""Multi-pair paper trading for demo data generation."""
+"""Experimental script — NOT used in the final CrossMind submission pipeline.
+Multi-pair paper trading with relaxed parameters for data generation testing."""
 import sys, os, time, json
 from datetime import datetime, timezone
 

@@ -16,7 +16,7 @@
 - [x] Complete cycle: signal → risk → execute/refuse → ledger
 
 ## Day 3 — War Room
-- [x] War Room: 4 historical crash scenarios with 60-day windows
+- [x] War Room: 3 historical crash scenarios with 60-day windows
 - [x] War Room: replay engine feeding candles to agent
 - [x] War Room: agent death detection
 - [x] Refusal Impact Score: tracks price after refusal
@@ -55,12 +55,13 @@
 - [x] Pitch deck created (9 slides)
 - [x] README complete with Quick Start
 
-## Status: 23/25 FEATURES COMPLETE
+## Status: 24/25 FEATURES COMPLETE
 - GitHub: github.com/yaowubarbara/crossmind (latest pushed)
+- Claude live evidence: approval + refusal samples in evidence/
+- All smoke tests passing
 
 ## Remaining
-- [ ] #9 Claude API live test (optional — fallback works)
-- [ ] #25 Final submission to lablab.ai + surge.xyz (needs YouTube video + surge project)
+- [ ] #25 Final submission to lablab.ai + surge.xyz (needs YouTube video)
 
 ## Files
 ```

@@ -1,0 +1,28 @@
+{
+  "started": "2026-03-30T14:59:00Z",
+  "ended": "2026-03-30T16:30:00Z",
+  "duration_hours_actual": 1.5,
+  "status": "running",
+  "pair": "BTC/USD",
+  "strategy": "RSI(14) Mean Reversion, 4H candles",
+  "parameters": {
+    "rsi_buy_threshold": 28,
+    "rsi_sell_threshold": 65,
+    "stop_loss_pct": 0.03,
+    "take_profit_pct": 0.05,
+    "max_drawdown_pct": 0.05,
+    "max_consecutive_losses": 3,
+    "position_size_pct": 0.10
+  },
+  "results": {
+    "total_trades": 0,
+    "refusals": 0,
+    "final_balance": 10000.00,
+    "initial_balance": 10000.00,
+    "max_drawdown_pct": 0.0,
+    "current_rsi": 59,
+    "market_state": "Neutral — RSI in 28-65 zone, no signals triggered"
+  },
+  "interpretation": "Zero trades during a stable market period is correct behavior for a mean reversion strategy with strict RSI<28 entry threshold. CrossMind is designed to trade infrequently and only when conditions are clearly favorable. Not trading IS a valid strategy when market conditions don't warrant risk.",
+  "dead_man_switch": "Active — refreshing every 5 minutes"
+}

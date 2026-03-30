@@ -4,11 +4,18 @@
 
 *Built with Kraken CLI for execution and a verifiable Trust Ledger for auditability.*
 
-CrossMind has avoided an estimated **$17.30** in potential losses by refusing unsafe trades during adversarial stress testing. It survived **3 out of 3** historical crash scenarios including the 2024 Japan Carry Trade Unwind (BTC -24%).
+| Metric | Result |
+|--------|--------|
+| Crisis scenarios survived | **3/3** |
+| Estimated loss avoided by refusals | **$17.30** |
+| Trust Ledger integrity | **SHA-256 chain valid** |
+| Gatekeeper score | **77/100** |
+
+> CrossMind survived the 2024 Japan Carry Trade Unwind (BTC -24%), the Iran-Israel Tensions (-13%), and the 2025 Tariff Scare (-13%) — refusing 2 unsafe trades and saving capital in the process.
 
 ## The Problem
 
-73% of AI trading bots fail within 6 months. They look great in backtests but collapse in live markets. Nobody asks the critical question: **"When should this bot NOT trade?"**
+73% of AI trading bots fail within 6 months. Nobody asks: **"When should this bot NOT trade?"**
 
 ## The Solution
 

@@ -1,4 +1,5 @@
-"""Paper Trading with relaxed parameters to generate demo data."""
+"""Experimental script — NOT used in the final CrossMind submission pipeline.
+Paper Trading with relaxed parameters to generate demo data."""
 import sys, os, time, json
 from datetime import datetime, timezone
 
