@@ -160,7 +160,7 @@
       "id": 23,
       "name": "Demo video recorded (3 min)",
       "category": "presentation",
-      "passes": false,
+      "passes": true,
       "day": 10
     },
     {
