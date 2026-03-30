@@ -48,7 +48,7 @@ def apply_slippage(price: float, side: str, candles: list, idx: int) -> float:
 
 
 # Historical crash scenarios — use daily candles for older data
-# 3 historical crash scenarios with 60-day windows for RSI history
+# 6 historical crash scenarios with 60-day windows for RSI history
 # Unified across all files: config.py, README.md, dashboard.py, evidence/
 CRASH_SCENARIOS = [
     {
@@ -73,6 +73,30 @@ CRASH_SCENARIOS = [
         "pair": "BTCUSD",
         "start_ts": 1733184000,  # 2024-12-03 (60 days before)
         "end_ts": 1739059200,   # 2025-02-09
+        "interval": 1440,
+    },
+    {
+        "label": "2024-12 Year-End Selloff",
+        "description": "BTC corrected 15% from December 2024 highs during year-end profit taking.",
+        "pair": "BTCUSD",
+        "start_ts": 1727740800,  # 2024-10-01 (60 days before)
+        "end_ts": 1735689600,   # 2025-01-01
+        "interval": 1440,
+    },
+    {
+        "label": "2025-03 March Correction",
+        "description": "BTC dropped from $93K to $78K during broader market risk-off.",
+        "pair": "BTCUSD",
+        "start_ts": 1735689600,  # 2025-01-01 (60 days before)
+        "end_ts": 1743465600,   # 2025-04-01
+        "interval": 1440,
+    },
+    {
+        "label": "2024-06 Summer Grind",
+        "description": "BTC ground down 20% through summer 2024 low-volume selling.",
+        "pair": "BTCUSD",
+        "start_ts": 1712016000,  # 2024-04-02 (60 days before)
+        "end_ts": 1719792000,   # 2024-07-01
         "interval": 1440,
     },
 ]

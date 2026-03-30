@@ -1,0 +1,34 @@
+{
+  "scenarios": [
+    {
+      "scenario": "2024-08 Japan Carry Trade Unwind",
+      "crossmind_pnl": -191.45,
+      "reckless_pnl": -76.46,
+      "delta": -114.99,
+      "crossmind_survived": true,
+      "reckless_survived": true,
+      "crossmind_drawdown": 1.91,
+      "reckless_drawdown": 0.76,
+      "refusals": 2
+    },
+    {
+      "scenario": "2025-02 Tariff Scare",
+      "crossmind_pnl": 52.59,
+      "reckless_pnl": 54.03,
+      "delta": -1.44,
+      "crossmind_survived": true,
+      "reckless_survived": true,
+      "crossmind_drawdown": 0,
+      "reckless_drawdown": 0,
+      "refusals": 0
+    }
+  ],
+  "summary": {
+    "crossmind_total_pnl": -138.86,
+    "reckless_total_pnl": -22.43,
+    "delta": -116.43,
+    "crossmind_survived": "2/2",
+    "reckless_survived": "2/2",
+    "total_refusals": 2
+  }
+}

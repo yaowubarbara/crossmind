@@ -24,10 +24,10 @@ NO_US_OPEN_TRADING = True    # Skip 13:30-15:00 UTC
 US_OPEN_START_UTC = 13.5     # 13:30
 US_OPEN_END_UTC = 15.0       # 15:00
 
-# War Room scenarios — unified with war_room.py (3 scenarios, daily candles, 60-day windows)
+# War Room scenarios — unified with war_room.py (6 scenarios, daily candles, 60-day windows)
 # Actual scenario definitions are in war_room.py CRASH_SCENARIOS
 # These are kept here for reference only
-WAR_ROOM_SCENARIO_COUNT = 3
+WAR_ROOM_SCENARIO_COUNT = 6
 
 # Slippage modeling
 SLIPPAGE_NORMAL_BPS = 7       # 7 basis points normal

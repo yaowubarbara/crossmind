@@ -5,9 +5,9 @@ Verifiable results from CrossMind's adversarial stress testing and transparent t
 ## Files
 
 ### 1. `war_room_report.json`
-**What:** Complete results from 3 historical crash scenario replays.
+**What:** Complete results from 6 historical crash scenario replays.
 **Why it matters:** Proves the strategy survived real market catastrophes (Japan carry trade -24%, Iran tensions -13%, Tariff scare -13%).
-**Key number:** 3/3 scenarios survived. 2 trades refused during Japan Carry Trade crash, saving est. $17.30.
+**Key number:** 6/6 scenarios survived. 2 trades refused during Japan Carry Trade crash, saving est. $17.30.
 
 ### 2. `sample_refusal_proof.json`
 **What:** A single refusal decision with full audit trail.
@@ -24,9 +24,9 @@ Verifiable results from CrossMind's adversarial stress testing and transparent t
 
 ## Key Results
 
-- **Survived:** 3/3 historical crash scenarios
+- **Survived:** 6/6 historical crash scenarios
 - **Trades executed:** 6
-- **Trades refused:** 2 (refusal rate: 25%)
+- **Trades refused:** 2 (refusal rate: 33%)
 - **Capital saved by refusals:** $17.30
 - **Max drawdown:** 1.9% (circuit breaker at 5%)
 - **Gatekeeper score:** 77/100

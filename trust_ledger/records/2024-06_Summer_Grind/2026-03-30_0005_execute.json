@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-03-30T08:57:35.521129+00:00",
-  "entry_id": 2,
+  "timestamp": "2026-03-30T08:58:09.921657+00:00",
+  "entry_id": 5,
   "analyst_summary": null,
   "strategist_proposal": null,
   "intent": {
@@ -24,6 +24,6 @@
   },
   "refusal_proof": null,
   "refusal_impact": null,
-  "prev_hash": "24878647aab9b12d3b0590f452e190872009aa03621c49e67308a41ac51ee8f6",
-  "entry_hash": "d0ba47036c6c6b9e69e25534b2ec43c8793657c42e9c0e52b74ed77c808da1cd"
+  "prev_hash": "6394b65dc49ce618d84a17d761f6b1c350138cb9663f2dc28aa635be35c1cb25",
+  "entry_hash": "89fdd61f617ac28066c0785c73be2b81af9b7a1f93b629509be174b306ba9930"
 }

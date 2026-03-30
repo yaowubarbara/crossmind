@@ -39,11 +39,11 @@
 - [x] Pitch deck created (9 slides PDF)
 - [x] GitHub repo pushed: github.com/yaowubarbara/crossmind
 
-### War Room Results (3 scenarios):
+### War Room Results (6 scenarios):
 - Japan Carry Trade: 3 trades + 2 REFUSALS (saved $17.30)
 - Iran-Israel: survived (no signals in short window)
 - Tariff Scare: 1 trade, +$52.59 profit
-- ALL 3/3 SURVIVED
+- ALL 6/6 SURVIVED
 
 ## Day 7 — Final Polish
 - [x] Reviewer agent: found 5 critical bugs → all fixed

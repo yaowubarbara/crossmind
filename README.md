@@ -6,8 +6,8 @@
 
 | Metric | Result |
 |--------|--------|
-| Crisis scenarios survived | **3/3** |
-| Estimated loss avoided by refusals | **$17.30** |
+| Crisis scenarios survived | **6/6** |
+| Max drawdown during -24% crash | **1.9%** |
 | Trust Ledger integrity | **SHA-256 chain valid** |
 | Gatekeeper score | **77/100** |
 
