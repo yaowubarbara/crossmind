@@ -1,0 +1,181 @@
+{
+  "project": "CrossMind",
+  "total_features": 25,
+  "features": [
+    {
+      "id": 1,
+      "name": "Kraken CLI wrapper (ticker, ohlc, paper trading)",
+      "category": "foundation",
+      "passes": true,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "name": "RSI signal generator with time filters",
+      "category": "signals",
+      "passes": true,
+      "day": 1
+    },
+    {
+      "id": 3,
+      "name": "Trust Ledger with SHA-256 hash chain",
+      "category": "trust",
+      "passes": true,
+      "day": 1
+    },
+    {
+      "id": 4,
+      "name": "Risk Manager with Claude tool_use + fallback",
+      "category": "risk",
+      "passes": true,
+      "day": 1
+    },
+    {
+      "id": 5,
+      "name": "Config module with all parameters",
+      "category": "foundation",
+      "passes": true,
+      "day": 1
+    },
+    {
+      "id": 6,
+      "name": "Demo HTML page (Day 1)",
+      "category": "presentation",
+      "passes": true,
+      "day": 1
+    },
+    {
+      "id": 7,
+      "name": "Orchestrator main trading loop",
+      "category": "core",
+      "passes": true,
+      "day": 2
+    },
+    {
+      "id": 8,
+      "name": "Portfolio state tracker (capital, drawdown, positions)",
+      "category": "core",
+      "passes": true,
+      "day": 2
+    },
+    {
+      "id": 9,
+      "name": "Risk Manager connected to Claude API (live test)",
+      "category": "risk",
+      "passes": false,
+      "day": 2
+    },
+    {
+      "id": 10,
+      "name": "Complete cycle: signal \u2192 risk check \u2192 execute/refuse \u2192 ledger",
+      "category": "core",
+      "passes": true,
+      "day": 2
+    },
+    {
+      "id": 11,
+      "name": "War Room: load historical crash OHLC from Kraken",
+      "category": "warroom",
+      "passes": true,
+      "day": 3
+    },
+    {
+      "id": 12,
+      "name": "War Room: replay engine (feed candles to agent)",
+      "category": "warroom",
+      "passes": true,
+      "day": 3
+    },
+    {
+      "id": 13,
+      "name": "War Room: agent death detection (capital <= 0)",
+      "category": "warroom",
+      "passes": true,
+      "day": 3
+    },
+    {
+      "id": 14,
+      "name": "Adversary Agent: select attack scenario based on agent weakness",
+      "category": "warroom",
+      "passes": true,
+      "day": 4
+    },
+    {
+      "id": 15,
+      "name": "Refusal Impact Score: track price after refusal",
+      "category": "trust",
+      "passes": true,
+      "day": 5
+    },
+    {
+      "id": 16,
+      "name": "Gatekeeper: score agents after War Room (drawdown, survival)",
+      "category": "core",
+      "passes": true,
+      "day": 5
+    },
+    {
+      "id": 17,
+      "name": "Dead Man's Switch integration (cancel-after)",
+      "category": "execution",
+      "passes": true,
+      "day": 6
+    },
+    {
+      "id": 18,
+      "name": "Slippage modeling (normal 5-10bps, crash 100-300bps)",
+      "category": "execution",
+      "passes": true,
+      "day": 6
+    },
+    {
+      "id": 19,
+      "name": "Streamlit dashboard: live status + decisions + refusals",
+      "category": "presentation",
+      "passes": true,
+      "day": 7
+    },
+    {
+      "id": 20,
+      "name": "Dashboard: War Room replay visualization",
+      "category": "presentation",
+      "passes": true,
+      "day": 7
+    },
+    {
+      "id": 21,
+      "name": "End-to-end integration test",
+      "category": "testing",
+      "passes": true,
+      "day": 8
+    },
+    {
+      "id": 22,
+      "name": "48-hour paper trading run started",
+      "category": "execution",
+      "passes": true,
+      "day": 9
+    },
+    {
+      "id": 23,
+      "name": "Demo video recorded (3 min)",
+      "category": "presentation",
+      "passes": false,
+      "day": 10
+    },
+    {
+      "id": 24,
+      "name": "Pitch deck (Sequoia template)",
+      "category": "presentation",
+      "passes": false,
+      "day": 10
+    },
+    {
+      "id": 25,
+      "name": "Final submission to lablab.ai",
+      "category": "submission",
+      "passes": false,
+      "day": 11
+    }
+  ]
+}

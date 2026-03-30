@@ -1,0 +1,16 @@
+[48H Runner] Starting 48h paper trading run
+[48H Runner] Check interval: 300s (5 min)
+[48H Runner] Max iterations: 576
+[48H Runner] Started at: 2026-03-30T06:59:18.828869+00:00
+[CrossMind] Initialized in live mode
+[CrossMind] Initial capital: $10,000.00
+[CrossMind] Dead Man's Switch ENABLED — orders auto-cancel if agent stops
+
+============================================================
+  CrossMind Live Paper Trading
+  Pair: BTC/USD | Interval: 300s
+  Max Drawdown: 5.0%
+============================================================
+
+  ⚡ Dead Man's Switch refreshed (60s)
+  BTC/USD $67,269.90 | RSI 58.93 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT  

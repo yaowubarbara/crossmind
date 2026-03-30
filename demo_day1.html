@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CrossMind — Day 1 Demo</title>
+<style>
+  /* Local fonts only - no external dependencies */
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a1a;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .header h1 {
+    font-size: 42px;
+    background: linear-gradient(135deg, #10b981, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+
+  .header .soul {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+  }
+
+  .header .day {
+    display: inline-block;
+    background: linear-gradient(135deg, #10b981, #f59e0b);
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 8px;
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    flex: 1;
+  }
+
+  .card {
+    background: #12122a;
+    border: 1px solid #1e1e3a;
+    border-radius: 12px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .card h3 {
+    font-size: 13px;
+    color: #10b981;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  /* Price card */
+  .price-big {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+  }
+
+  .price-label {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .price-range {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #888;
+    font-family: 'Courier New', monospace;
+  }
+
+  /* RSI */
+  .rsi-value {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #ffd700;
+  }
+
+  .rsi-bar {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(to right, #ff4444 0%, #ff4444 30%, #ffd700 30%, #ffd700 70%, #44ff44 70%);
+    border-radius: 6px;
+    margin-top: 12px;
+    position: relative;
+  }
+
+  .rsi-marker {
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background: white;
+    border-radius: 2px;
+    top: -4px;
+    transition: left 1s ease;
+  }
+
+  .rsi-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* Signal */
+  .signal-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+  }
+
+  .signal-hold { background: #333; color: #888; }
+  .signal-buy { background: #0a3d0a; color: #44ff44; }
+  .signal-sell { background: #3d0a0a; color: #ff4444; }
+  .signal-refuse { background: #3d1a0a; color: #ff8844; }
+
+  .signal-reason {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  /* Balance */
+  .balance-value {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Courier New', monospace;
+    color: #44ff44;
+  }
+
+  /* Trust Ledger */
+  .ledger-entry {
+    background: #0a0a1a;
+    border: 1px solid #1e1e3a;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+  }
+
+  .ledger-hash {
+    color: #f59e0b;
+    font-size: 10px;
+    word-break: break-all;
+  }
+
+  .ledger-decision {
+    font-weight: 700;
+  }
+
+  .ledger-execute { color: #44ff44; }
+  .ledger-refuse { color: #ff8844; }
+
+  /* Architecture */
+  .arch-layer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+
+  .arch-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .arch-ai { background: #f59e0b; }
+  .arch-det { background: #10b981; }
+
+  .arch-status {
+    margin-left: auto;
+    font-size: 12px;
+  }
+
+  .status-done { color: #44ff44; }
+  .status-pending { color: #666; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #444;
+    opacity: 0;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card:nth-child(1) { animation: slideUp 0.6s ease 0.3s forwards; }
+  .card:nth-child(2) { animation: slideUp 0.6s ease 0.5s forwards; }
+  .card:nth-child(3) { animation: slideUp 0.6s ease 0.7s forwards; }
+  .card:nth-child(4) { animation: slideUp 0.6s ease 0.9s forwards; }
+  .card:nth-child(5) { animation: slideUp 0.6s ease 1.1s forwards; }
+  .card:nth-child(6) { animation: slideUp 0.6s ease 1.3s forwards; }
+
+  .footer { animation: fadeIn 1s ease 2s forwards; }
+
+  /* Typing effect for refusal */
+  .typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #f59e0b;
+    animation: typing 3s steps(60) 3s forwards, blink 0.7s step-end infinite;
+    width: 0;
+  }
+
+  @keyframes typing {
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>CrossMind</h1>
+    <div class="soul">"Proves not only how it trades, but when it refuses to trade."</div>
+    <div class="day">DAY 1 / 13 — Foundation</div>
+  </div>
+
+  <div class="grid">
+    <!-- Price -->
+    <div class="card">
+      <h3>BTC/USD Live</h3>
+      <div class="price-label">Kraken CLI → Paper Trading</div>
+      <div class="price-big" id="price">$67,394</div>
+      <div class="price-range">
+        24h Low: $65,733 &nbsp;|&nbsp; High: $67,725<br>
+        Volume: 2,259 BTC
+      </div>
+    </div>
+
+    <!-- RSI -->
+    <div class="card">
+      <h3>RSI (14) — 4H Candles</h3>
+      <div class="rsi-value" id="rsi">59.9</div>
+      <div class="rsi-bar">
+        <div class="rsi-marker" id="rsi-marker" style="left: 59.9%"></div>
+      </div>
+      <div class="rsi-labels">
+        <span>Oversold (&lt;28)</span>
+        <span>Neutral</span>
+        <span>Overbought (&gt;65)</span>
+      </div>
+      <div style="margin-top: 8px; font-size: 12px; color: #666;">
+        721 candles analyzed
+      </div>
+    </div>
+
+    <!-- Signal -->
+    <div class="card">
+      <h3>Signal Generator</h3>
+      <div class="signal-badge signal-hold">HOLD</div>
+      <div class="signal-reason">
+        No signal. RSI=59.9 — neutral zone (28-65).<br>
+        Mean reversion strategy waiting for oversold condition.
+      </div>
+      <div style="margin-top: 10px; font-size: 12px; color: #666;">
+        Strategy: RSI Mean Reversion<br>
+        Entry: RSI &lt; 28 | Exit: RSI &gt; 65
+      </div>
+    </div>
+
+    <!-- Paper Balance -->
+    <div class="card">
+      <h3>Paper Trading Account</h3>
+      <div class="balance-value">$9,328.66</div>
+      <div style="margin-top: 8px; font-size: 13px; color: #888;">
+        Initial: $10,000.00<br>
+        Test trade executed: -$671.34<br>
+        Mode: Paper (no real money)
+      </div>
+      <div style="margin-top: 10px; font-size: 12px; color: #10b981;">
+        ⚡ Dead Man's Switch: Ready
+      </div>
+    </div>
+
+    <!-- Trust Ledger -->
+    <div class="card">
+      <h3>Trust Ledger (SHA-256 Chain)</h3>
+      <div class="ledger-entry">
+        <div><span class="ledger-decision ledger-execute">● EXECUTE</span> — Test buy 0.01 BTC</div>
+        <div style="color: #888; margin-top: 4px;">Price: $66,960 | Fee: $1.74</div>
+        <div class="ledger-hash">Hash: a3f8c2...7b91d4</div>
+      </div>
+      <div class="ledger-entry">
+        <div><span class="ledger-decision ledger-refuse">● REFUSE</span> — Buy 0.05 BTC</div>
+        <div style="color: #888; margin-top: 4px;">Reason: Drawdown approaching 5% threshold</div>
+        <div class="ledger-hash">Hash: d91e4f...2c83a7 ← prev: a3f8c2...7b91d4</div>
+      </div>
+      <div style="margin-top: 8px; font-size: 11px; color: #44ff44;">
+        ✓ Chain integrity verified
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="card">
+      <h3>4-Agent Architecture</h3>
+      <div class="arch-layer">
+        <div class="arch-dot arch-det"></div>
+        <span>Analyst</span>
+        <span class="arch-status status-done">✓ Built</span>
+      </div>
+      <div class="arch-layer">
+        <div class="arch-dot arch-det"></div>
+        <span>Strategist</span>
+        <span class="arch-status status-done">✓ Built</span>
+      </div>
+      <div class="arch-layer">
+        <div class="arch-dot arch-ai"></div>
+        <span>Risk Manager (LLM Agent)</span>
+        <span class="arch-status status-done">✓ Built</span>
+      </div>
+      <div class="arch-layer">
+        <div class="arch-dot arch-ai"></div>
+        <span>Adversary (LLM Agent)</span>
+        <span class="arch-status status-pending">○ Day 3</span>
+      </div>
+      <div style="margin-top: 12px; font-size: 11px; color: #888;">
+        <span style="color: #10b981;">●</span> Deterministic &nbsp;
+        <span style="color: #f59e0b;">●</span> AI-powered
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    CrossMind — AI Trading Agents Hackathon (lablab.ai) — Built with Kraken CLI
+  </div>
+</div>
+</body>
+</html>
