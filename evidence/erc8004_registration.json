@@ -1,0 +1,13 @@
+{
+  "agent": "CrossMind",
+  "wallet": "0x1f18326953Df6b36E9Cd4208f18e36173B30851b",
+  "registry": "0x8004A818BFB912233c491871b3d84c89A494BD9e",
+  "chain": "base-sepolia",
+  "chainId": 84532,
+  "txHash": "0x5ab87e47df96fc2f114d20ff815db6f73c70b111d9e4c599e81a18165074d7e6",
+  "blockNumber": 39719699,
+  "gasUsed": 914858,
+  "explorer": "https://sepolia.basescan.org/tx/0x5ab87e47df96fc2f114d20ff815db6f73c70b111d9e4c599e81a18165074d7e6",
+  "status": "SUCCESS",
+  "registeredAt": "2026-04-03T09:12:00Z"
+}

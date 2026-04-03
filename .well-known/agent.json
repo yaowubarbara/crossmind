@@ -1,0 +1,48 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "CrossMind",
+  "description": "Red-teamed transparent trading agent that proves when refusing to trade protects capital. War Room stress-tested against 6 real market crashes. Every decision — execution and refusal — is recorded in a SHA-256 hash-chained Trust Ledger with verifiable validation artifacts.",
+  "image": "",
+  "active": true,
+  "x402Support": false,
+  "trustModels": ["reputation", "validation-artifacts"],
+  "capabilities": [
+    "autonomous-trading",
+    "risk-management",
+    "refusal-proof-generation",
+    "adversarial-stress-testing",
+    "trust-ledger-verification"
+  ],
+  "services": [
+    {
+      "name": "web",
+      "endpoint": "https://github.com/yaowubarbara/crossmind"
+    },
+    {
+      "name": "MCP",
+      "endpoint": "kraken-cli",
+      "version": "0.2.3"
+    }
+  ],
+  "validationArtifacts": {
+    "trustLedger": {
+      "format": "JSONL",
+      "hashAlgorithm": "SHA-256",
+      "chainVerification": true,
+      "fields": ["intent", "risk_check", "decision", "result", "refusal_proof"]
+    },
+    "warRoom": {
+      "scenarios": 6,
+      "survived": 6,
+      "maxDrawdown": "1.9%"
+    }
+  },
+  "riskParameters": {
+    "maxDrawdown": "5%",
+    "maxConsecutiveLosses": 3,
+    "positionSize": "10%",
+    "stopLoss": "3%",
+    "takeProfit": "5%",
+    "circuitBreaker": true
+  }
+}
