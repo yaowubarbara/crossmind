@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-06T07:30:19.252364+00:00",
+  "entry_id": 41,
+  "analyst_summary": null,
+  "strategist_proposal": null,
+  "intent": {
+    "action": "SELL",
+    "pair": "BTC/USD",
+    "price": 29109.15,
+    "volume": 0.01671744,
+    "reason": "Stop loss triggered. Entry=30033.96, Current=29109.15, PnL=-3.08%"
+  },
+  "risk_check": {
+    "drawdown_pct": 2.05
+  },
+  "decision": "EXECUTE",
+  "result": {
+    "price": 29109.15,
+    "pnl": -27.74,
+    "fee": 1.239934433931648
+  },
+  "refusal_proof": null,
+  "refusal_impact": null,
+  "prev_hash": "27a7f01827115613070cc3b0854f25a5186de3fb92a3f25769d9baf52519ef0f",
+  "entry_hash": "169680390781f2f0451f93274b1ec6331d34ce6ffb8df3a6c0abca5c148c297d"
+}

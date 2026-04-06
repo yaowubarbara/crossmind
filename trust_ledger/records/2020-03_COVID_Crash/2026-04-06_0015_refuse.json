@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-04-06T05:19:31.425124+00:00",
+  "entry_id": 15,
+  "analyst_summary": {
+    "market_state": "VOLATILE",
+    "rsi": 25.54,
+    "price": 5393.04
+  },
+  "strategist_proposal": {
+    "action": "BUY",
+    "reason": "RSI oversold. RSI=25.54 < 35. Mean reversion entry.",
+    "confidence": 0.72
+  },
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 5393.04,
+    "volume": 0.09019945,
+    "reason": "RSI oversold. RSI=25.54 < 35. Mean reversion entry.",
+    "rsi": 25.54
+  },
+  "risk_check": {
+    "drawdown_pct": 2.9,
+    "consecutive_losses": 3,
+    "risk_level": "HIGH"
+  },
+  "decision": "REFUSE",
+  "result": null,
+  "refusal_proof": "Trading paused after 3 consecutive losses. Strategy may not suit current market conditions. Wait for market regime change or manual review.",
+  "refusal_impact": null,
+  "prev_hash": "87d64807ae7c27d3887704e3b2775eb649346a11588375e2de3fb2e1b04c9f68",
+  "entry_hash": "4eaf55973a6e95c89b4fae86ed158c8d1f3c55902f2aac2f7473044772a20e34"
+}

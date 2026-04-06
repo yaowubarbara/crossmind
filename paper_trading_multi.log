@@ -1,207 +1,0 @@
-[Multi] Pair: SOL/USD
-[Multi] RSI buy<40, sell>58
-[Multi] Drawdown limit: 3.0%
-[CrossMind] Initialized in live mode
-[CrossMind] Initial capital: $10,000.00
-[CrossMind] Dead Man's Switch ENABLED — orders auto-cancel if agent stops
-
-============================================================
-  CrossMind Live Paper Trading
-  Pair: SOL/USD | Interval: 120s
-  Max Drawdown: 3.0%
-============================================================
-
-  ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.54 | RSI 52.52 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.55 | RSI 52.57 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.56 | RSI 52.62 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.60 | RSI 52.81 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.41 | RSI 51.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.53 | RSI 52.52 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.47 | RSI 52.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.50 | RSI 52.32 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.54 | RSI 52.52 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.55 | RSI 52.57 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.57 | RSI 52.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.74 | RSI 53.47 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.95 | RSI 54.44 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.05 | RSI 54.62 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.94 | RSI 54.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.95 | RSI 54.44 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.89 | RSI 54.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.00 | RSI 57.48 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.02 | RSI 57.57 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 58.09 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.22 | RSI 58.43 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.04 | RSI 57.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.20 | RSI 58.51 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.16 | RSI 58.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.23 | RSI 58.47 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.30 | RSI 58.76 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 58.09 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.28 | RSI 58.68 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.22 | RSI 58.43 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 58.26 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.22 | RSI 58.43 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.20 | RSI 58.34 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.26 | RSI 58.59 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.23 | RSI 58.47 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.19 | RSI 58.3 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.19 | RSI 58.3 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.57 | RSI 59.84 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.64 | RSI 60.12 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.52 | RSI 59.65 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.50 | RSI 59.57 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.53 | RSI 59.69 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.36 | RSI 59.0 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.49 | RSI 59.53 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.52 | RSI 59.65 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.49 | RSI 59.53 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.42 | RSI 59.25 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.46 | RSI 59.41 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.44 | RSI 59.33 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.38 | RSI 59.09 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.34 | RSI 58.92 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.36 | RSI 59.0 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.35 | RSI 58.96 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.31 | RSI 58.8 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.28 | RSI 58.68 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.23 | RSI 58.47 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.23 | RSI 58.47 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.32 | RSI 58.88 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.28 | RSI 58.68 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.25 | RSI 58.55 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.26 | RSI 58.59 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.25 | RSI 58.55 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.20 | RSI 58.34 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.15 | RSI 58.13 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 57.96 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.09 | RSI 57.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.13 | RSI 58.04 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 58.09 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.10 | RSI 57.92 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 57.96 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.16 | RSI 58.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 58.26 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 58.09 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.13 | RSI 58.04 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 58.0 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.12 | RSI 58.0 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.05 | RSI 57.7 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.09 | RSI 57.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.07 | RSI 57.79 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.09 | RSI 57.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.05 | RSI 57.7 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.09 | RSI 57.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.07 | RSI 57.79 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.06 | RSI 57.74 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.97 | RSI 57.35 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.96 | RSI 57.31 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.00 | RSI 57.48 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.04 | RSI 57.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.13 | RSI 58.04 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.97 | RSI 57.35 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.98 | RSI 57.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.97 | RSI 57.35 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.99 | RSI 57.44 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.98 | RSI 57.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.97 | RSI 57.35 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.93 | RSI 57.16 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.88 | RSI 56.86 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.64 | RSI 55.49 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.69 | RSI 55.77 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.70 | RSI 55.83 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.72 | RSI 56.0 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.63 | RSI 55.43 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.71 | RSI 55.88 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.82 | RSI 56.51 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.79 | RSI 56.34 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.81 | RSI 56.45 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.82 | RSI 56.51 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.86 | RSI 56.75 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.86 | RSI 56.75 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.92 | RSI 57.1 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.83 | RSI 56.63 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.92 | RSI 57.1 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.91 | RSI 57.04 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.85 | RSI 56.69 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.93 | RSI 57.16 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.96 | RSI 57.31 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.92 | RSI 57.1 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.97 | RSI 57.35 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $83.95 | RSI 57.31 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.06 | RSI 57.74 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.04 | RSI 57.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.16 | RSI 58.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.06 | RSI 57.74 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.10 | RSI 57.92 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.17 | RSI 58.22 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.05 | RSI 57.7 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 58.26 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.04 | RSI 57.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.10 | RSI 57.92 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 57.96 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.08 | RSI 57.83 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.10 | RSI 57.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.15 | RSI 58.13 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.15 | RSI 58.13 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.17 | RSI 58.22 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 57.96 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 57.96 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 58.09 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 53.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.22 | RSI 53.6 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.29 | RSI 53.97 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.36 | RSI 54.32 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.38 | RSI 54.42 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.31 | RSI 54.07 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.27 | RSI 53.86 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.23 | RSI 53.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 53.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.24 | RSI 53.71 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 53.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.23 | RSI 53.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 53.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.09 | RSI 52.87 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.11 | RSI 52.99 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.18 | RSI 53.39 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.17 | RSI 53.34 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.17 | RSI 53.34 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.24 | RSI 53.71 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.20 | RSI 53.5 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.15 | RSI 53.23 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.27 | RSI 53.86 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.49 | RSI 54.97 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.51 | RSI 55.07 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.42 | RSI 54.63 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.43 | RSI 54.68 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.44 | RSI 54.73 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.45 | RSI 54.73 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.48 | RSI 54.92 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.44 | RSI 54.73 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.44 | RSI 54.73 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.39 | RSI 54.48 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.45 | RSI 54.77 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.35 | RSI 54.27 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.56 | RSI 55.31 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.72 | RSI 56.08 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.68 | RSI 55.89 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.59 | RSI 55.46 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.58 | RSI 55.41 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.56 | RSI 55.31 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.61 | RSI 55.56 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.66 | RSI 55.79 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.62 | RSI 55.6 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.66 | RSI 55.79 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.54 | RSI 55.22 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.56 | RSI 55.31 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.66 | RSI 55.79 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.42 | RSI 54.63 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.43 | RSI 54.68 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.42 | RSI 54.63 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.25 | RSI 53.66 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.14 | RSI 53.17 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.27 | RSI 53.86 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.21 | RSI 53.55 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.15 | RSI 53.23 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT    ⚡ Dead Man's Switch refreshed (60s)
-  SOL/USD $84.16 | RSI 53.29 | HOLD | DD 0.0% | PnL $+0.00 | 💤 FLAT  

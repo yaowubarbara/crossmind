@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-06T05:19:31.412696+00:00",
+  "entry_id": 3,
+  "analyst_summary": null,
+  "strategist_proposal": null,
+  "intent": {
+    "action": "SELL",
+    "pair": "BTC/USD",
+    "price": 8915.24,
+    "volume": 0.05855375,
+    "reason": "Take profit reached. Entry=8529.58, Current=8915.24, PnL=4.52%"
+  },
+  "risk_check": {
+    "drawdown_pct": 0
+  },
+  "decision": "EXECUTE",
+  "result": {
+    "price": 8915.24,
+    "pnl": 19.56,
+    "fee": 1.3563038310538469
+  },
+  "refusal_proof": null,
+  "refusal_impact": null,
+  "prev_hash": "a88fd90192a94b8c71030a7a5562d88decaec251cb1db0f953c7b00d1332ecb6",
+  "entry_hash": "64f4c529c898b3254d81a38b879862749a971bc16ac56a47163322a850774ace"
+}

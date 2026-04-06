@@ -1,0 +1,61 @@
+[
+  {
+    "action": "register",
+    "txHash": "87e2e21d595a6533b49f48c37c400ad9dd164bf25dae0c0a3d4fa871bb88d61c",
+    "etherscanUrl": "https://sepolia.etherscan.io/tx/0x87e2e21d595a6533b49f48c37c400ad9dd164bf25dae0c0a3d4fa871bb88d61c",
+    "timestamp": "2026-04-06T05:03:12.581457+00:00",
+    "chain": "sepolia",
+    "chainId": 11155111,
+    "contract": "AgentRegistry",
+    "agentName": "CrossMind"
+  },
+  {
+    "action": "claimAllocation",
+    "txHash": "b2f42750136eb0150948db45a6c998a39ff7a916199e49579b80db57e32c29b0",
+    "etherscanUrl": "https://sepolia.etherscan.io/tx/0xb2f42750136eb0150948db45a6c998a39ff7a916199e49579b80db57e32c29b0",
+    "timestamp": "2026-04-06T05:05:37.469738+00:00",
+    "chain": "sepolia",
+    "chainId": 11155111,
+    "contract": "HackathonVault",
+    "agentId": 12
+  },
+  {
+    "action": "BUY",
+    "txHash": "ff552e269c308fed08a34da20c36ff46152b4a0f74f7bc00562098c93fc78c71",
+    "etherscanUrl": "https://sepolia.etherscan.io/tx/0xff552e269c308fed08a34da20c36ff46152b4a0f74f7bc00562098c93fc78c71",
+    "timestamp": "2026-04-06T05:06:00.448075+00:00",
+    "chain": "sepolia",
+    "chainId": 11155111,
+    "contract": "RiskRouter",
+    "agentId": 12,
+    "pair": "XBTUSD",
+    "amount": 500,
+    "amountUsdScaled": 50000
+  },
+  {
+    "action": "SELL",
+    "txHash": "aceaac6a61dd57e10d089a68d03825bff6d4a3cdf953824ed727dd08c89e479d",
+    "etherscanUrl": "https://sepolia.etherscan.io/tx/0xaceaac6a61dd57e10d089a68d03825bff6d4a3cdf953824ed727dd08c89e479d",
+    "timestamp": "2026-04-06T05:06:12.395126+00:00",
+    "chain": "sepolia",
+    "chainId": 11155111,
+    "contract": "RiskRouter",
+    "agentId": 12,
+    "pair": "ETHUSD",
+    "amount": 300,
+    "amountUsdScaled": 30000
+  },
+  {
+    "action": "checkpoint_score90",
+    "txHash": "36e8d845af4e75e3ad1bbbf69920d8ffe84779a591283fe73969f7807b85689e",
+    "etherscanUrl": "https://sepolia.etherscan.io/tx/0x36e8d845af4e75e3ad1bbbf69920d8ffe84779a591283fe73969f7807b85689e",
+    "timestamp": "2026-04-06T05:06:24.347126+00:00",
+    "chain": "sepolia",
+    "chainId": 11155111,
+    "contract": "ValidationRegistry",
+    "agentId": 12,
+    "score": 90,
+    "notes": "War Room 6/6 scenarios survived, max drawdown 1.9%, 4 refusals saved capital during Japan Carry Trade crash",
+    "checkpointHash": "0xb3dfd3d175bce0fbb57929b9e39d0e58ebed3de036da10fdac5a82647056a006"
+  }
+]

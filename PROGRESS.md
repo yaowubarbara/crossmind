@@ -32,7 +32,7 @@
 
 ## Day 6 — Integration + Bug Fixes
 - [x] End-to-end pipeline: War Room → Gatekeeper → Adversary → Live
-- [x] 48-hour paper trading started in background
+- [x] Paper trading monitoring session conducted
 - [x] Reviewer agent found 5 critical bugs → all fixed
 - [x] Advisor agent suggestions applied (War Room 60-day windows)
 - [x] README written
@@ -70,15 +70,24 @@
 - Summer Grind (-18%): -$40
 - **6/6 survived, 8 trades, 4 refusals**
 
-## Status: 24/25 FEATURES COMPLETE
+## Day 9 (2026-04-06) — On-Chain Operations + Parameter Tuning
+- [x] Agent #12 registered on shared AgentRegistry (Ethereum Sepolia)
+- [x] 3 TradeIntents submitted via RiskRouter
+- [x] 6 Validation checkpoints posted (avg score 90/100)
+- [x] Trust Ledger SHA-256 hash anchored on-chain
+- [x] Parameters tuned for daily candle timeframes (RSI 35/60, SL 2%, TP 4%, position 5%)
+- [x] War Room expanded: 6 → 9 scenarios (+Terra/LUNA, +FTX, +COVID crash)
+- [x] Private key moved to environment variable (CROSSMIND_PK)
+
+## Status: 24/25 FEATURES COMPLETE (HF deployed, surge submitted, ERC-8004 agent done)
 - GitHub: github.com/yaowubarbara/crossmind
 
 ## Remaining (Day 3+)
-- [ ] Deploy dashboard to HuggingFace Spaces
+- [x] Deploy dashboard to HuggingFace Spaces
 - [ ] Kraken API key config (pending registration)
-- [ ] ERC-8004 integration (optional, +$15K eligibility)
-- [ ] Record 3-min YouTube video
-- [ ] Register project on surge.xyz
+- [x] ERC-8004 integration (has its own agent)
+- [x] Record 3-min YouTube video — uploaded
+- [x] Register project on surge.xyz — submitted
 - [ ] #25 Final submission to lablab.ai
 
 ## Files

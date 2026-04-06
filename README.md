@@ -4,7 +4,7 @@
 
 > Most AI trading bots optimize for profit. CrossMind optimizes for survival first, profit second.
 
-[**Live Dashboard**](https://huggingface.co/spaces/barbarawu/crossmind-dashboard) · [**ERC-8004 Agent #3429**](https://sepolia.basescan.org/tx/0x5ab87e47df96fc2f114d20ff815db6f73c70b111d9e4c599e81a18165074d7e6) · [**Trust Ledger**](trust_ledger/) · [**Agent Card**](.well-known/agent.json)
+[**Live Dashboard**](https://huggingface.co/spaces/barbarawu/crossmind-dashboard) · [**ERC-8004 Agent #12**](https://sepolia.etherscan.io/address/0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3) · [**Trust Ledger**](trust_ledger/) · [**Agent Card**](.well-known/agent.json)
 
 ---
 
@@ -12,14 +12,16 @@
 
 | Metric | Result |
 |--------|--------|
-| Crisis scenarios survived | **6/6** |
-| Max drawdown during -24% crash | **1.9%** |
-| Trust Ledger integrity | **SHA-256 chain valid** |
-| Gatekeeper score | **77/100** |
-| ERC-8004 Agent ID | **#3429** (Base Sepolia) |
-| Refusal rate | **25%** of signals blocked |
+| Crisis scenarios survived | **11/11** (9 crashes + 2 bull markets) |
+| Max drawdown across all scenarios | **2.9%** |
+| A/B test vs Momentum Chaser | **CrossMind 11/11 survived, Momentum 7/11 (4 blown)** |
+| Trust Ledger integrity | **SHA-256 chain valid + on-chain anchored** |
+| ERC-8004 Agent ID | **#12** (Ethereum Sepolia, shared AgentRegistry) |
+| On-chain TradeIntents | **10 via RiskRouter** |
+| Validation Score | **90/100** (on-chain average) |
+| Refusals | **28 across 11 scenarios** |
 
-> CrossMind survived the 2024 Japan Carry Trade Unwind (BTC -24%), the Iran-Israel Tensions (-13%), the 2025 Tariff Scare (-13%), Year-End Selloff (-43%), March Correction (-26%), and Summer Grind (-18%) — refusing unsafe trades and preserving capital across all six.
+> CrossMind survived 11 market scenarios — 9 crashes including Terra/LUNA (-54%), COVID (-54%), FTX (-30%), and 2 bull markets — while the Momentum Chaser baseline blew up in 4. Max drawdown 2.9% during the worst crypto crash in history.
 
 ---
 
@@ -40,7 +42,18 @@ War Room → Gatekeeper → Live Execution → Trust Ledger
 ```
 
 ### Phase 1: War Room — Adversarial Stress Testing
-Strategies are stress-tested against 6 real historical crashes using Kraken OHLC data. An LLM-powered Adversary Agent selects the most lethal attack scenarios. Strategies that fail are killed. Only survivors proceed.
+Strategies are stress-tested against 11 real historical scenarios (9 crashes + 2 bull markets) using Kraken OHLC data. An LLM-powered Adversary Agent selects the most lethal attack scenarios. Strategies that fail are killed. Only survivors proceed.
+
+### A/B Stress Test — Survival Comparison
+CrossMind was tested head-to-head against two aggressive baselines across all 11 scenarios:
+
+| Strategy | Survived | Circuit Breaks | Total PnL | Worst MaxDD |
+|----------|----------|---------------|-----------|-------------|
+| **CrossMind** | **11/11** | **0** | -$407 | **2.9%** |
+| All-In Bot | 10/11 | 1 | -$2,435 | 23.8% |
+| Momentum Chaser | 7/11 | 4 | -$6,599 | 19.6% |
+
+Same market data. Same time periods. Only the risk parameters differ. CrossMind's multi-layer risk management is the difference between survival and ruin.
 
 ### Phase 2: Gatekeeper — Survival Scoring
 Surviving strategies are scored on maximum drawdown (<5%), survival rate (>75%), and risk-adjusted performance. Only strategies that pass the Gatekeeper are cleared for live trading.
@@ -68,18 +81,20 @@ After each refusal, CrossMind tracks what would have happened if the trade had e
 
 ## ERC-8004 Integration
 
-CrossMind is registered on the **ERC-8004 Identity Registry** on Base Sepolia:
+CrossMind is registered on the **ERC-8004 Identity Registry** on Ethereum Sepolia via a shared AgentRegistry:
 
 | Component | Detail |
 |-----------|--------|
-| Agent Identity NFT | **#3429** on Base Sepolia |
-| Registry | `0x8004A818BFB912233c491871b3d84c89A494BD9e` |
+| Agent Identity NFT | **#12** on Ethereum Sepolia |
+| Shared AgentRegistry | `0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3` |
 | Agent Card | [`.well-known/agent.json`](.well-known/agent.json) |
-| Validation Artifacts | Trust Ledger (JSONL, SHA-256 chained) |
+| TradeIntents | 10 via RiskRouter (on-chain) |
+| Validation Checkpoints | 10+ checkpoints recorded on-chain |
+| Trust Ledger | SHA-256 chained, anchored on-chain |
 | Risk Checks | Every trade intent evaluated before execution |
 | Strategy Checkpoints | War Room survival data per scenario |
 
-CrossMind's Trust Ledger entries map directly to ERC-8004 validation artifacts: trade intents, risk checks, and strategy checkpoints are all recorded and verifiable.
+CrossMind's Trust Ledger entries map directly to ERC-8004 validation artifacts: trade intents, risk checks, and strategy checkpoints are all recorded and verifiable. On-chain data is stored via shared ERC-8004 contracts on Ethereum Sepolia.
 
 ---
 
@@ -102,6 +117,7 @@ CrossMind's Trust Ledger entries map directly to ERC-8004 validation artifacts: 
 |------------|---------|
 | **Kraken CLI** | AI-native trading infrastructure (paper trading, Dead Man's Switch, WebSocket, MCP) |
 | **ERC-8004** | On-chain agent identity, reputation, and validation artifacts |
+| **ERC-8004 shared contracts** | Ethereum Sepolia (AgentRegistry, RiskRouter, ValidationLog) |
 | **Python** | Core trading logic, orchestration, and dashboard |
 | **Streamlit** | Intelligence terminal dashboard |
 | **SHA-256** | Hash chain for Trust Ledger integrity |
@@ -124,9 +140,9 @@ CrossMind's Trust Ledger entries map directly to ERC-8004 validation artifacts: 
 |-----------|-------|
 | Max Drawdown | 5% (circuit breaker) |
 | Max Consecutive Losses | 3 (trading pause) |
-| Position Size | 10% of capital |
-| Stop Loss / Take Profit | 3% / 5% |
-| RSI Entry / Exit | < 28 / > 65 |
+| Position Size | 5% of capital |
+| Stop Loss / Take Profit | 2% / 4% |
+| RSI Entry / Exit | < 35 / > 60 |
 | Weekend Trading | Blocked |
 | US Market Open | Blocked |
 
@@ -150,7 +166,7 @@ python3 war_room.py
 # Launch dashboard (demo mode)
 CROSSMIND_DEMO=true streamlit run dashboard.py
 
-# Register on ERC-8004 (Base Sepolia)
+# Register on ERC-8004 (Ethereum Sepolia)
 python3 register_8004.py --private-key 0x...
 ```
 

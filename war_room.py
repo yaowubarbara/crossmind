@@ -99,6 +99,47 @@ CRASH_SCENARIOS = [
         "end_ts": 1719792000,   # 2024-07-01
         "interval": 1440,
     },
+    {
+        "label": "2022-06 Terra/LUNA Collapse",
+        "description": "BTC dropped ~40% as Terra/LUNA ecosystem collapsed, triggering contagion across crypto.",
+        "pair": "BTCUSD",
+        "start_ts": 1649980800,  # 2022-04-15 (60 days before crash)
+        "end_ts": 1656633600,   # 2022-07-01
+        "interval": 1440,
+    },
+    {
+        "label": "2022-11 FTX Collapse",
+        "description": "BTC dropped ~25% as FTX exchange collapsed, destroying market confidence.",
+        "pair": "BTCUSD",
+        "start_ts": 1662940800,  # 2022-09-12 (60 days before crash)
+        "end_ts": 1669852800,   # 2022-12-01
+        "interval": 1440,
+    },
+    {
+        "label": "2020-03 COVID Crash",
+        "description": "BTC dropped ~50% in March 2020 as global markets panicked over COVID-19.",
+        "pair": "BTCUSD",
+        "start_ts": 1578873600,  # 2020-01-13 (60 days before crash)
+        "end_ts": 1585699200,   # 2020-04-01
+        "interval": 1440,
+    },
+    # Bull market scenarios
+    {
+        "label": "2023-Q4 Recovery Rally",
+        "description": "BTC rallied from ~$27K to ~$42K (+55%) in Q4 2023 recovery.",
+        "pair": "BTCUSD",
+        "start_ts": 1690848000,  # 2023-08-01 (60 days before rally)
+        "end_ts": 1704067199,   # 2023-12-31
+        "interval": 1440,
+    },
+    {
+        "label": "2024-Q1 Bull Run",
+        "description": "BTC surged from ~$42K to ~$71K (+69%) in Q1 2024 bull run.",
+        "pair": "BTCUSD",
+        "start_ts": 1698883200,  # 2023-11-02 (60 days before)
+        "end_ts": 1711929599,   # 2024-03-31
+        "interval": 1440,
+    },
 ]
 
 
@@ -112,9 +153,10 @@ class WarRoom:
 
     def load_scenario(self, scenario: dict) -> list[dict]:
         """Load OHLC data for a crash scenario. Uses cache."""
+        safe_label = scenario['label'].replace(' ', '_').replace('/', '_')
         cache_file = os.path.join(
             self.cache_dir,
-            f"{scenario['label'].replace(' ', '_')}.json"
+            f"{safe_label}.json"
         )
 
         # Check cache
@@ -317,7 +359,7 @@ class WarRoom:
         return result
 
     def run_all_scenarios(self) -> list[dict]:
-        """Run all crash scenarios and return survival report."""
+        """Run all scenarios (crash + bull) and return survival report."""
         print(f"\n{'='*60}")
         print(f"  WAR ROOM — Running {len(CRASH_SCENARIOS)} scenarios")
         print(f"{'='*60}")
@@ -337,6 +379,20 @@ class WarRoom:
         total_refusals = sum(r.get("refusals", 0) for r in results)
         print(f"  Total Refusals: {total_refusals}")
         print(f"{'='*60}\n")
+
+        # Save results to JSON
+        os.makedirs("evidence", exist_ok=True)
+        report = {
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "total_scenarios": len(results),
+            "survived": survived,
+            "circuit_breakers": sum(1 for r in results if r.get("circuit_breaker", False)),
+            "total_refusals": total_refusals,
+            "scenarios": results,
+        }
+        with open("evidence/war_room_report_v2.json", "w") as f:
+            json.dump(report, f, indent=2)
+        print(f"  Results saved to evidence/war_room_report_v2.json\n")
 
         return results
 

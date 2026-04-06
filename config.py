@@ -6,16 +6,16 @@ PAIR_KRAKEN = "BTCUSD"
 
 # Strategy parameters (from quant expert)
 RSI_PERIOD = 14
-RSI_BUY_THRESHOLD = 28      # Enter when RSI < 28
-RSI_SELL_THRESHOLD = 65      # Exit when RSI > 65
-STOP_LOSS_PCT = 0.03         # 3% stop loss
-TAKE_PROFIT_PCT = 0.05       # 5% take profit
+RSI_BUY_THRESHOLD = 35      # Enter when RSI < 35
+RSI_SELL_THRESHOLD = 60      # Exit when RSI > 60
+STOP_LOSS_PCT = 0.02         # 2% stop loss
+TAKE_PROFIT_PCT = 0.04       # 4% take profit
 CANDLE_INTERVAL = 240        # 4-hour candles (minutes)
 
 # Risk management
 MAX_DRAWDOWN_PCT = 0.05      # 5% circuit breaker
 MAX_CONSECUTIVE_LOSSES = 3   # Pause after 3 losses
-MAX_POSITION_PCT = 0.10      # 10% of capital per trade
+MAX_POSITION_PCT = 0.05      # 5% of capital per trade
 INITIAL_CAPITAL = 10000.0
 
 # Time filters
@@ -27,7 +27,7 @@ US_OPEN_END_UTC = 15.0       # 15:00
 # War Room scenarios — unified with war_room.py (6 scenarios, daily candles, 60-day windows)
 # Actual scenario definitions are in war_room.py CRASH_SCENARIOS
 # These are kept here for reference only
-WAR_ROOM_SCENARIO_COUNT = 6
+WAR_ROOM_SCENARIO_COUNT = 11
 
 # Slippage modeling
 SLIPPAGE_NORMAL_BPS = 7       # 7 basis points normal

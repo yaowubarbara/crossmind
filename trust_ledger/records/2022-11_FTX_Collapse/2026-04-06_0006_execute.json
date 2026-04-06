@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-04-06T05:19:31.370324+00:00",
+  "entry_id": 6,
+  "analyst_summary": null,
+  "strategist_proposal": null,
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 17070.31,
+    "volume": 0.02949756,
+    "reason": "RSI oversold. RSI=31.68 < 35. Mean reversion entry.",
+    "rsi": 31.68
+  },
+  "risk_check": {
+    "drawdown_pct": 0,
+    "consecutive_losses": 0,
+    "risk_level": "LOW"
+  },
+  "decision": "EXECUTE",
+  "result": {
+    "price": 17070.31,
+    "volume": 0.02949756,
+    "fee": 1.3353681726124274
+  },
+  "refusal_proof": null,
+  "refusal_impact": null,
+  "prev_hash": "7ee4636df8a2a97a8f6ca25b02b2634776d1573c5ae60f65689e40ca147673d6",
+  "entry_hash": "42af9894875617a94a077bbfe5877756463bf97c0a37c27fcc836fa22a564807"
+}

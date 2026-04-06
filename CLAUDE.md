@@ -57,10 +57,10 @@ with sync_playwright() as p:
 - run_full_pipeline.py: End-to-end entry point
 
 ## Trading Parameters (from quant expert)
-- RSI(14), 4H candles, entry <28, exit >65
-- Stop loss 3%, take profit 5%
+- RSI(14), 4H candles, entry <35, exit >60
+- Stop loss 2%, take profit 4%
 - Max drawdown 5%, max consecutive losses 3
-- Position size 10%, no weekend, no US market open
+- Position size 5%, no weekend, no US market open
 
 ## Testing
 - Run: python3 orchestrator.py --mode live --iterations 3

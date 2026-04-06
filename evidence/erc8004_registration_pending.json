@@ -1,0 +1,42 @@
+{
+  "agent": "CrossMind",
+  "wallet": "0x1f18326953Df6b36E9Cd4208f18e36173B30851b",
+  "agentURI": "data:application/json;base64,eyJ0eXBlIjogImh0dHBzOi8vZWlwcy5ldGhlcmV1bS5vcmcvRUlQUy9laXAtODAwNCNyZWdpc3RyYXRpb24tdjEiLCAibmFtZSI6ICJDcm9zc01pbmQiLCAiZGVzY3JpcHRpb24iOiAiUmVkLXRlYW1lZCB0cmFuc3BhcmVudCB0cmFkaW5nIGFnZW50IHRoYXQgcHJvdmVzIHdoZW4gcmVmdXNpbmcgdG8gdHJhZGUgcHJvdGVjdHMgY2FwaXRhbC4gV2FyIFJvb20gc3RyZXNzLXRlc3RlZCBhZ2FpbnN0IDYgcmVhbCBtYXJrZXQgY3Jhc2hlcy4gRXZlcnkgZGVjaXNpb24gaXMgcmVjb3JkZWQgaW4gYSBTSEEtMjU2IGhhc2gtY2hhaW5lZCBUcnVzdCBMZWRnZXIuIiwgImltYWdlIjogIiIsICJhY3RpdmUiOiB0cnVlLCAieDQwMlN1cHBvcnQiOiBmYWxzZSwgInNlcnZpY2VzIjogW3sibmFtZSI6ICJ3ZWIiLCAiZW5kcG9pbnQiOiAiaHR0cHM6Ly9naXRodWIuY29tL3lhb3d1YmFyYmFyYS9jcm9zc21pbmQifV0sICJjYXBhYmlsaXRpZXMiOiBbImF1dG9ub21vdXMtdHJhZGluZyIsICJyaXNrLW1hbmFnZW1lbnQiLCAicmVmdXNhbC1wcm9vZi1nZW5lcmF0aW9uIiwgImFkdmVyc2FyaWFsLXN0cmVzcy10ZXN0aW5nIiwgInRydXN0LWxlZGdlci12ZXJpZmljYXRpb24iXSwgInZhbGlkYXRpb25BcnRpZmFjdHMiOiB7InRydXN0TGVkZ2VyIjogeyJmb3JtYXQiOiAiSlNPTkwiLCAiaGFzaEFsZ29yaXRobSI6ICJTSEEtMjU2IiwgImNoYWluVmVyaWZpY2F0aW9uIjogdHJ1ZX0sICJ3YXJSb29tIjogeyJzY2VuYXJpb3MiOiA2LCAic3Vydml2ZWQiOiA2LCAibWF4RHJhd2Rvd24iOiAiMS45JSJ9fX0=",
+  "metadata": {
+    "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+    "name": "CrossMind",
+    "description": "Red-teamed transparent trading agent that proves when refusing to trade protects capital. War Room stress-tested against 6 real market crashes. Every decision is recorded in a SHA-256 hash-chained Trust Ledger.",
+    "image": "",
+    "active": true,
+    "x402Support": false,
+    "services": [
+      {
+        "name": "web",
+        "endpoint": "https://github.com/yaowubarbara/crossmind"
+      }
+    ],
+    "capabilities": [
+      "autonomous-trading",
+      "risk-management",
+      "refusal-proof-generation",
+      "adversarial-stress-testing",
+      "trust-ledger-verification"
+    ],
+    "validationArtifacts": {
+      "trustLedger": {
+        "format": "JSONL",
+        "hashAlgorithm": "SHA-256",
+        "chainVerification": true
+      },
+      "warRoom": {
+        "scenarios": 6,
+        "survived": 6,
+        "maxDrawdown": "1.9%"
+      }
+    }
+  },
+  "status": "pending-on-chain",
+  "targetRegistry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+  "targetChain": "base-sepolia",
+  "note": "Registration data prepared. On-chain registration pending deployment of ERC-8004 registry on Base Sepolia."
+}

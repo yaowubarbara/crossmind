@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-04-06T07:30:19.473946+00:00",
+  "entry_id": 5,
+  "analyst_summary": null,
+  "strategist_proposal": null,
+  "intent": {
+    "action": "SELL",
+    "pair": "BTC/USD",
+    "price": 26600.0,
+    "volume": 0.01937602,
+    "reason": "RSI overbought exit. RSI=61.68 > 60"
+  },
+  "risk_check": {
+    "drawdown_pct": 0
+  },
+  "decision": "EXECUTE",
+  "result": {
+    "price": 26600.0,
+    "pnl": 11.37,
+    "fee": 1.33910751131976
+  },
+  "refusal_proof": null,
+  "refusal_impact": null,
+  "prev_hash": "39b6c419c6948751d75d0fd33452374ad239997bf532af4147cabae3340955f6",
+  "entry_hash": "34b35f5aa92c60454fb8369ac34598fb2b3ce9b4f903e3996b0f8383ac6119a1"
+}
