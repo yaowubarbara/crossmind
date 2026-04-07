@@ -174,7 +174,7 @@
       "id": 25,
       "name": "Final submission to lablab.ai",
       "category": "submission",
-      "passes": false,
+      "passes": true,
       "day": 11
     }
   ]

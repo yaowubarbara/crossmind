@@ -13,9 +13,9 @@ Then we ran an A/B test. Same data, same time periods, three strategies:
 
 The only difference is risk parameters. CrossMind's multi-layer risk management is the difference between survival and ruin.
 
-The system runs a 4-phase pipeline: War Room adversarial stress testing, Gatekeeper survival scoring, Live Execution via Kraken CLI paper trading, and a Trust Ledger recording every decision as a SHA-256 hash-chained validation artifact. Across 11 scenarios, CrossMind issued 28 refusals — each with structured proof explaining why the trade was too dangerous and a Refusal Impact Score showing capital saved.
+The system runs a 4-phase pipeline: War Room adversarial stress testing, Gatekeeper survival scoring, Live Execution via Kraken CLI paper trading, and a Trust Ledger recording every decision as a SHA-256 hash-chained validation artifact. Across 11 scenarios, CrossMind issued 38 refusals — each with structured proof explaining why the trade was too dangerous and a Refusal Impact Score showing capital saved.
 
-CrossMind is registered as ERC-8004 Agent #12 on Ethereum Sepolia (AgentRegistry 0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3). On-chain artifacts include 10 TradeIntents submitted through the RiskRouter, with an average validation score of 90/100.
+CrossMind is registered as ERC-8004 Agent #12 on Ethereum Sepolia (AgentRegistry 0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3). On-chain artifacts include 11 TradeIntents submitted through the RiskRouter, 11 validation checkpoints with an average score of 90/100, and a claimed HackathonVault allocation.
 
 Four specialized agents collaborate: deterministic Analyst and Strategist for hallucination-free signals, and LLM-powered Risk Manager and Adversary for nuanced risk judgment and red-teaming. Built with Kraken CLI (paper trading, Dead Man's Switch, OHLC, MCP), ERC-8004 shared contracts, Python, and Streamlit.
 

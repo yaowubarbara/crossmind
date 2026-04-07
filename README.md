@@ -17,9 +17,10 @@
 | A/B test vs Momentum Chaser | **CrossMind 11/11 survived, Momentum 7/11 (4 blown)** |
 | Trust Ledger integrity | **SHA-256 chain valid + on-chain anchored** |
 | ERC-8004 Agent ID | **#12** (Ethereum Sepolia, shared AgentRegistry) |
-| On-chain TradeIntents | **10 via RiskRouter** |
-| Validation Score | **90/100** (on-chain average) |
-| Refusals | **28 across 11 scenarios** |
+| On-chain TradeIntents | **11 via RiskRouter** |
+| Validation Score | **90/100** (on-chain average, 11 checkpoints) |
+| Vault Allocation | **Claimed** (HackathonVault) |
+| Refusals | **38 across 11 scenarios** |
 
 > CrossMind survived 11 market scenarios — 9 crashes including Terra/LUNA (-54%), COVID (-54%), FTX (-30%), and 2 bull markets — while the Momentum Chaser baseline blew up in 4. Max drawdown 2.9% during the worst crypto crash in history.
 
