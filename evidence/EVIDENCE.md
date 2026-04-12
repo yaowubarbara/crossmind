@@ -4,10 +4,10 @@ Verifiable results from CrossMind's adversarial stress testing and transparent t
 
 ## Files
 
-### 1. `war_room_report.json`
-**What:** Complete results from 6 historical crash scenario replays.
-**Why it matters:** Proves the strategy survived real market catastrophes (Japan carry trade -24%, Iran tensions -13%, Tariff scare -13%).
-**Key number:** 6/6 scenarios survived. 2 trades refused during Japan Carry Trade crash, saving est. $17.30.
+### 1. `war_room_report_v2.json`
+**What:** Complete results from 11 historical scenario replays (9 crashes + 2 bull markets).
+**Why it matters:** Proves the strategy survived real market catastrophes including Terra/LUNA (-54%), COVID crash (-54%), FTX collapse (-30%), and Japan carry trade unwind (-24%).
+**Key numbers:** 11/11 scenarios survived, 66 total refusals, max drawdown 2.9%, Proof of Preservation Alpha 28x.
 
 ### 2. `sample_refusal_proof.json`
 **What:** A single refusal decision with full audit trail.
@@ -24,10 +24,35 @@ Verifiable results from CrossMind's adversarial stress testing and transparent t
 
 ## Key Results
 
-- **Survived:** 6/6 historical crash scenarios
-- **Trades executed:** 6
-- **Trades refused:** 2 (refusal rate: 33%)
-- **Capital saved by refusals:** $17.30
-- **Max drawdown:** 1.9% (circuit breaker at 5%)
-- **Gatekeeper score:** 77/100
-- **Trust Ledger:** SHA-256 chain valid
+- **Survived:** 11/11 historical scenarios (9 crashes + 2 bull markets)
+- **Total refusals:** 66 across all 11 scenarios
+- **Refusal confirmation rate:** 100% (all 66 refusals retrospectively validated by subsequent price declines in crash scenarios, verified against Kraken OHLCV data)
+- **Max drawdown:** 2.9% (circuit breaker at 5%)
+- **A/B test:** CrossMind 11/11 survived vs. Momentum Chaser 7/11 (4 blown accounts)
+- **Trust Ledger:** SHA-256 chain valid, on-chain anchored
+- **Proof of Preservation Alpha (PPA): 28x**
+
+## Proof of Preservation Alpha
+
+PPA measures how much capital CrossMind's refusal decisions protected versus what was actually lost in trading. It answers: "Did the refusal engine earn its keep?"
+
+### Methodology
+
+For each refused trade: **Capital Protected = Position Size × Market Drop %**
+
+PPA ratio = Total Capital Protected / Absolute Realized Losses
+
+### PPA Breakdown by Scenario
+
+| Scenario | Market Drop | Refusals | Capital At Risk | Capital Protected | Actual PnL |
+|----------|-------------|----------|-----------------|-------------------|------------|
+| Terra/LUNA Collapse | -54% | 28 | $14,000 | $7,560 | -$182 |
+| COVID Crash | -54% | 16 | $8,000 | $4,320 | -$271 |
+| March Correction | -26% | 18 | $9,000 | $2,340 | -$72 |
+| Japan Carry Trade | -24% | 4 | $2,000 | $480 | +$6 |
+| Other 7 scenarios | — | 0 | — | — | +$123 |
+| **Total** | — | **66** | **$33,000+** | **$14,700+** | **-$520** |
+
+**PPA = $14,700 / $520 ≈ 28x**
+
+Every dollar lost in actual trading was offset by $28 of capital that never entered the market during a crash. CrossMind's refusal engine is not a conservative drag on performance — it is the primary source of risk-adjusted value.

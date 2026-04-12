@@ -267,15 +267,22 @@ class WarRoom:
                     closes = [c["close"] for c in history]
                     from signal_generator import compute_rsi
                     current_rsi = compute_rsi(closes)
+                    # Derive analyst/strategist fields from real signal data (not hardcoded)
+                    market_state = "VOLATILE" if current_rsi < 30 or current_rsi > 70 else "RANGING"
+                    # Confidence = RSI distance from threshold, normalized 0-1
+                    rsi_distance = abs(config.RSI_BUY_THRESHOLD - current_rsi)
+                    signal_confidence = round(min(1.0, rsi_distance / config.RSI_BUY_THRESHOLD), 2)
                     entry = ledger.record_refusal(
                         intent, risk_check,
                         risk_decision.refusal_proof or risk_decision.reasoning,
-                        analyst_summary={"market_state": "VOLATILE" if current_rsi < 30 or current_rsi > 70 else "RANGING", "rsi": current_rsi, "price": price},
-                        strategist_proposal={"action": "BUY", "reason": intent.get("reason", ""), "confidence": 0.72},
+                        analyst_summary={"market_state": market_state, "rsi": current_rsi, "price": price},
+                        strategist_proposal={"action": intent.get("action", "BUY"), "reason": intent.get("reason", ""), "confidence": signal_confidence},
                     )
 
-                    # Calculate Refusal Impact Score: what would have happened?
-                    # Look ahead 5 candles to see if price dropped
+                    # Retrospective Refusal Impact: measure hypothetical loss vs actual scenario outcome.
+                    # NOTE: This is an ex-post calculation using subsequent candles to quantify
+                    # the capital preserved. The REFUSAL DECISION itself was made using only
+                    # data available at decision time (RSI, drawdown, consecutive losses).
                     future_candles = candles[i+1:i+6]
                     if future_candles:
                         future_low = min(c["close"] for c in future_candles)
