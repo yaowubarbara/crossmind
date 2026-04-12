@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-04-12T03:29:32.234350+00:00",
+  "entry_id": 4,
+  "analyst_summary": {
+    "market_state": "OVERSOLD",
+    "rsi": 29.3,
+    "price": 83500.0
+  },
+  "strategist_proposal": {
+    "action": "BUY",
+    "reason": "Position already open. Duplicate entry b",
+    "confidence": 0.02
+  },
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 83500.0,
+    "volume": 0.00598802,
+    "cost": 500.0,
+    "reason": "Position already open. Duplicate entry blocked. Capital prot",
+    "rsi": 29.3,
+    "confidence": 0.02,
+    "stop_loss": 81830.0,
+    "take_profit": 86840.0
+  },
+  "risk_check": {
+    "drawdown_pct": 2.0,
+    "consecutive_losses": 1,
+    "risk_level": "HIGH",
+    "position_size_adj": 0.0
+  },
+  "decision": "REFUSE",
+  "result": null,
+  "refusal_proof": "Position already open. Duplicate entry blocked. Capital protection enforced.",
+  "refusal_impact": null,
+  "prev_hash": "6b0bafe2361e55fafafa821a9e83e6b49aae4f0aa4db52cc658bb247412047a9",
+  "entry_hash": "2545bf8428c8471e665105cdfec8e9569f7cd23c6c7926c64989266677986bbd"
+}

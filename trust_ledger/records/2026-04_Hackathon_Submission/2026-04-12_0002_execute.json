@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-04-12T03:29:32.032193+00:00",
+  "entry_id": 2,
+  "analyst_summary": {
+    "market_state": "OVERBOUGHT",
+    "rsi": 67.2,
+    "price": 83260.0
+  },
+  "strategist_proposal": {
+    "action": "SELL",
+    "reason": "RSI 67.2 confirms overbought. Take-profi",
+    "confidence": 1.0
+  },
+  "intent": {
+    "action": "SELL",
+    "pair": "BTC/USD",
+    "price": 83260.0,
+    "volume": 0.00600528,
+    "cost": 500.0,
+    "reason": "RSI 67.2 confirms overbought. Take-profit at +4% triggered. ",
+    "rsi": 67.2,
+    "confidence": 1.0,
+    "stop_loss": 81594.8,
+    "take_profit": 86590.4
+  },
+  "risk_check": {
+    "drawdown_pct": 1.4,
+    "consecutive_losses": 2,
+    "risk_level": "LOW",
+    "position_size_adj": 1.0
+  },
+  "decision": "EXECUTE",
+  "result": {
+    "pnl": 19.5,
+    "fee": 0.5,
+    "order_id": "PAPER-1002"
+  },
+  "refusal_proof": null,
+  "refusal_impact": null,
+  "prev_hash": "25f4454804b88ac0178d223e46aec38ce3d693d814a24009666d38ee53a224c0",
+  "entry_hash": "782bdae41b95463894df828341aa86525a292e65d94734551aa08904471b0397"
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-04-12T03:29:32.133162+00:00",
+  "entry_id": 3,
+  "analyst_summary": {
+    "market_state": "OVERSOLD",
+    "rsi": 24.8,
+    "price": 83380.0
+  },
+  "strategist_proposal": {
+    "action": "BUY",
+    "reason": "3 consecutive losses detected. Risk Mana",
+    "confidence": 0.17
+  },
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 83380.0,
+    "volume": 0.00599664,
+    "cost": 500.0,
+    "reason": "3 consecutive losses detected. Risk Manager: trading pause e",
+    "rsi": 24.8,
+    "confidence": 0.17,
+    "stop_loss": 81712.4,
+    "take_profit": 86715.2
+  },
+  "risk_check": {
+    "drawdown_pct": 1.7,
+    "consecutive_losses": 0,
+    "risk_level": "HIGH",
+    "position_size_adj": 0.0
+  },
+  "decision": "REFUSE",
+  "result": null,
+  "refusal_proof": "3 consecutive losses detected. Risk Manager: trading pause enforced per risk protocol.",
+  "refusal_impact": null,
+  "prev_hash": "782bdae41b95463894df828341aa86525a292e65d94734551aa08904471b0397",
+  "entry_hash": "6b0bafe2361e55fafafa821a9e83e6b49aae4f0aa4db52cc658bb247412047a9"
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-04-12T03:29:31.830483+00:00",
+  "entry_id": 0,
+  "analyst_summary": {
+    "market_state": "OVERSOLD",
+    "rsi": 26.4,
+    "price": 83020.0
+  },
+  "strategist_proposal": {
+    "action": "BUY",
+    "reason": "RSI oversold but macro volatility elevat",
+    "confidence": 0.12
+  },
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 83020.0,
+    "volume": 0.00602265,
+    "cost": 500.0,
+    "reason": "RSI oversold but macro volatility elevated \u2014 drawdown risk e",
+    "rsi": 26.4,
+    "confidence": 0.12,
+    "stop_loss": 81359.6,
+    "take_profit": 86340.8
+  },
+  "risk_check": {
+    "drawdown_pct": 0.8,
+    "consecutive_losses": 0,
+    "risk_level": "HIGH",
+    "position_size_adj": 0.0
+  },
+  "decision": "REFUSE",
+  "result": null,
+  "refusal_proof": "RSI oversold but macro volatility elevated \u2014 drawdown risk exceeds 5% threshold. Circuit breaker engaged.",
+  "refusal_impact": null,
+  "prev_hash": "26ced2027ecd084a6a3d9caf3454bcde7a7dd48a7c09e817f2006d8cb1ed1e61",
+  "entry_hash": "e2125de5330c37579e6b286fc494c0f434a1ba269749eaf49dcc78efb11a24a0"
+}

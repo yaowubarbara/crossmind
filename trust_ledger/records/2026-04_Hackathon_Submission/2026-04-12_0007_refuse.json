@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-04-12T03:29:32.539127+00:00",
+  "entry_id": 7,
+  "analyst_summary": {
+    "market_state": "RANGING",
+    "rsi": 31.2,
+    "price": 83860.0
+  },
+  "strategist_proposal": {
+    "action": "BUY",
+    "reason": "RSI 31.2 borderline \u2014 confidence below t",
+    "confidence": 0.04
+  },
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 83860.0,
+    "volume": 0.00596232,
+    "cost": 500.0,
+    "reason": "RSI 31.2 borderline \u2014 confidence below threshold 0.85. Adver",
+    "rsi": 31.2,
+    "confidence": 0.04,
+    "stop_loss": 82182.8,
+    "take_profit": 87214.4
+  },
+  "risk_check": {
+    "drawdown_pct": 2.9,
+    "consecutive_losses": 1,
+    "risk_level": "HIGH",
+    "position_size_adj": 0.0
+  },
+  "decision": "REFUSE",
+  "result": null,
+  "refusal_proof": "RSI 31.2 borderline \u2014 confidence below threshold 0.85. Adversary flagged reversal risk.",
+  "refusal_impact": null,
+  "prev_hash": "6c64da97c61ca7ace3c2f8ed1cba3812cf73c9ec6b6751b132c5df724f1a9887",
+  "entry_hash": "76a494ed64e49d828cd797d0bf97d78ca4759af50c2c5c64e39bd916193afa33"
+}

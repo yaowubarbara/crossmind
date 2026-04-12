@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-04-12T03:29:32.335727+00:00",
+  "entry_id": 5,
+  "analyst_summary": {
+    "market_state": "OVERSOLD",
+    "rsi": 27.6,
+    "price": 83620.0
+  },
+  "strategist_proposal": {
+    "action": "BUY",
+    "reason": "Clean signal: RSI 27.6, no open position",
+    "confidence": 0.08
+  },
+  "intent": {
+    "action": "BUY",
+    "pair": "BTC/USD",
+    "price": 83620.0,
+    "volume": 0.00597943,
+    "cost": 500.0,
+    "reason": "Clean signal: RSI 27.6, no open position, drawdown 1.2%. App",
+    "rsi": 27.6,
+    "confidence": 0.08,
+    "stop_loss": 81947.6,
+    "take_profit": 86964.8
+  },
+  "risk_check": {
+    "drawdown_pct": 2.3,
+    "consecutive_losses": 2,
+    "risk_level": "LOW",
+    "position_size_adj": 1.0
+  },
+  "decision": "EXECUTE",
+  "result": {
+    "pnl": 19.5,
+    "fee": 0.5,
+    "order_id": "PAPER-1005"
+  },
+  "refusal_proof": null,
+  "refusal_impact": null,
+  "prev_hash": "2545bf8428c8471e665105cdfec8e9569f7cd23c6c7926c64989266677986bbd",
+  "entry_hash": "a34042d1b74dc9484c25e614571585d2c32474f8cef9ea50baeb24bf23d780ed"
+}
