@@ -62,7 +62,7 @@ https://github.com/yaowubarbara/crossmind
 ### 5. DEMO VIDEO URL
 
 ```
-[REQUIRED ACTION: Paste your YouTube unlisted URL here before submitting]
+https://youtu.be/6AjZK28uETw
 ```
 
 **Note:** PROGRESS.md confirms the 3-min video was recorded and uploaded to YouTube.
@@ -155,7 +155,7 @@ Every decision — execution and refusal — is recorded in a SHA-256 hash-chain
 - [x] Short Description: 168 chars (under 200)
 - [x] Long Description: 1,849 chars (under 2000) — **numbers consistent at 28x**
 - [x] GitHub URL: https://github.com/yaowubarbara/crossmind
-- [ ] Demo Video URL: **PASTE YOUTUBE URL** (video recorded, needs URL)
+- [x] Demo Video URL: https://youtu.be/6AjZK28uETw
 - [x] Live Dashboard: https://huggingface.co/spaces/barbarawu/crossmind-dashboard
 - [x] Tech Stack: listed above
 - [x] Team: Barbara Wu
