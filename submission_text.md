@@ -2,7 +2,7 @@
 
 ## Long Description (max 2000 chars)
 
-CrossMind introduces Proof of Preservation Alpha (PPA) — a new metric that quantifies the economic value of not trading. Where zkML proves execution happened, PPA proves the decision to stay out was correct. Across 11 real market crash scenarios, CrossMind issued 66 intelligent refusals with 100% Refusal Confirmation Rate: every refusal was retrospectively validated by subsequent price decline within the crash window, verified against historical Kraken OHLCV data.
+CrossMind introduces Proof of Preservation Alpha (PPA) — a new metric that quantifies the economic value of not trading. Where on-chain verification confirms execution, PPA evaluates the value of non-execution. Across 11 real market crash scenarios, CrossMind issued 66 intelligent refusals with 100% Refusal Confirmation Rate: every refusal was retrospectively validated by subsequent price decline within the crash window, verified against historical Kraken OHLCV data.
 
 The numbers: $33,000 in notional risk was blocked across 4 crash environments (Japan Carry -24%, March Correction -26%, Terra/LUNA -54%, COVID -54%). Against $520 in realized losses, those refusals shielded $14,700 in capital from adverse exposure — a PPA Ratio of 28x.
 
