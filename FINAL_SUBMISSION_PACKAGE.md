@@ -108,10 +108,9 @@ Barbara Wu
 | Wallet Address | `0x6c8019b971D600916AC39cc96a830E68A034dF47` |
 | Agent Card | https://github.com/yaowubarbara/crossmind/blob/main/.well-known/agent.json |
 | Etherscan | https://sepolia.etherscan.io/address/0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3 |
-| TradeIntents on-chain | 11 |
-| Validation Checkpoints | 111 (avg score 93/100) |
+| TradeIntents on-chain | 2 |
+| Validation Checkpoints | 61 (avg score 99/100) |
 | Vault Allocation | Claimed (HackathonVault, 0.001 ETH, block 10608281) |
-| Reputation Score | 64 |
 | Status | Active |
 
 **Copy-paste for submission form:**
@@ -130,7 +129,7 @@ Wallet: 0x6c8019b971D600916AC39cc96a830E68A034dF47
 2. Survival: 11/11 crash scenarios survived (Terra/LUNA -54%, COVID -54%, FTX -30%, Japan Carry -24%, 7 more)
 3. Max Drawdown: 2.9% (vs. 23.8% All-In Bot, 19.6% Momentum Chaser)
 4. Refusal Precision: 100% — all 66 refusals preceded adverse price movement
-5. On-chain: 11 TradeIntents + 111 validation checkpoints (avg 93/100) + HackathonVault claimed
+5. On-chain: 2 TradeIntents + 61 validation checkpoints (avg 99/100) + HackathonVault claimed
 ```
 
 ---
@@ -162,7 +161,7 @@ Every decision — execution and refusal — is recorded in a SHA-256 hash-chain
 - [x] Team: Barbara Wu
 - [x] ERC-8004 Agent #12 on Ethereum Sepolia
 - [x] Wallet: 0x6c8019b971D600916AC39cc96a830E68A034dF47
-- [x] On-chain state: 11 TradeIntents, 111 checkpoints, avg 93/100, vault claimed
+- [x] On-chain state: 2 TradeIntents, 61 checkpoints, avg 99/100, vault claimed
 
 ---
 

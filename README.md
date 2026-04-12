@@ -17,8 +17,8 @@
 | A/B test vs Momentum Chaser | **CrossMind 11/11 survived, Momentum 7/11 (4 blown)** |
 | Trust Ledger integrity | **SHA-256 chain valid + on-chain anchored** |
 | ERC-8004 Agent ID | **#12** (Ethereum Sepolia, shared AgentRegistry) |
-| On-chain TradeIntents | **11 via RiskRouter** |
-| Validation Score | **93/100** (on-chain average, 11 checkpoints) |
+| On-chain TradeIntents | **2 via RiskRouter** |
+| Validation Score | **99/100** (on-chain average, 61 checkpoints) |
 | Vault Allocation | **Claimed** (HackathonVault) |
 | Refusals | **66 across 11 scenarios** |
 | Proof of Preservation Alpha | **28x** ($14,700 protected / $520 actual losses) |
@@ -128,13 +128,13 @@ CrossMind is registered on the **ERC-8004 Identity Registry** on Ethereum Sepoli
 | Agent Identity NFT | **#12** on Ethereum Sepolia |
 | Shared AgentRegistry | `0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3` |
 | Agent Card | [`.well-known/agent.json`](.well-known/agent.json) |
-| TradeIntents | 11 via RiskRouter (on-chain) |
-| Validation Checkpoints | 111 validation checkpoints recorded on-chain |
+| TradeIntents | 2 via RiskRouter (on-chain) |
+| Validation Checkpoints | 61 validation checkpoints recorded on-chain |
 | Trust Ledger | SHA-256 chained, anchored on-chain |
 | Risk Checks | Every trade intent evaluated before execution |
 | Strategy Checkpoints | War Room survival data per scenario |
 
-CrossMind's Trust Ledger entries map directly to ERC-8004 validation artifacts: trade intents, risk checks, and strategy checkpoints are all recorded and verifiable. **11 TradeIntents, 111 validation checkpoints, avg score 93/100.** On-chain data is stored via shared ERC-8004 contracts on Ethereum Sepolia.
+CrossMind's Trust Ledger entries map directly to ERC-8004 validation artifacts: trade intents, risk checks, and strategy checkpoints are all recorded and verifiable. **2 TradeIntents, 61 validation checkpoints, avg score 99/100.** On-chain data is stored via shared ERC-8004 contracts on Ethereum Sepolia.
 
 ---
 

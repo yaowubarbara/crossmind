@@ -15,6 +15,6 @@ CrossMind's loss ratio is 6x better than All-In and 16x better than Momentum —
 
 Architecture: four specialized agents collaborate — deterministic Analyst and Strategist for hallucination-free signals, LLM-powered Risk Manager and Adversary for nuanced judgment and red-teaming. A SHA-256 hash-chained Trust Ledger records every decision. Every refusal carries a structured Refusal Impact Score, permanently timestamped.
 
-On-chain: registered as ERC-8004 Agent #12 on Ethereum Sepolia (AgentRegistry 0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3). 11 TradeIntents, 111 validation checkpoints averaging 93/100, HackathonVault allocation claimed. Refusals are verifiable artifacts — not self-reported claims.
+On-chain: registered as ERC-8004 Agent #12 on Ethereum Sepolia (AgentRegistry 0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3). 2 TradeIntents, 61 validation checkpoints averaging 99/100, HackathonVault allocation claimed. Refusals are verifiable artifacts — not self-reported claims.
 
 CrossMind does not promise profits. It delivers a 28x PPA: $28 of capital protected for every $1 lost.
