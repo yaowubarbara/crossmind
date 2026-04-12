@@ -119,6 +119,62 @@ After each refusal, CrossMind tracks what would have happened if the trade had e
 
 ---
 
+## Autonomous Decision Loop
+
+Every trade decision — including refusals — is made autonomously by the agent pipeline with zero human intervention:
+
+```
+Kraken OHLCV (live/cached)
+        │
+        ▼
+┌─────────────────┐
+│  ANALYST        │  RSI(14) calculation → market state
+│  (deterministic)│  No LLM. No hallucination.
+└────────┬────────┘
+         │  market_state, rsi, price
+         ▼
+┌─────────────────┐
+│  STRATEGIST     │  Mean-reversion signal → BUY / HOLD / SELL
+│  (deterministic)│  Position size = 5% of capital
+└────────┬────────┘
+         │  trade_intent
+         ▼
+┌─────────────────┐
+│  RISK MANAGER   │  LLM evaluates: drawdown limits, consecutive
+│  (LLM-powered)  │  losses, volatility regime, circuit breakers
+└────────┬────────┘
+         │
+    ┌────┴────┐
+    │         │
+ EXECUTE    REFUSE ──→ Refusal Proof generated (structured JSON)
+    │         │        Refusal Impact Score calculated ex-post
+    ▼         ▼
+┌────────────────────────────────────────┐
+│  SHA-256 HASH-CHAINED TRUST LEDGER     │
+│  Every decision appended automatically │
+│  prev_hash → entry_hash → next entry   │
+└────────────────────────────────────────┘
+         │
+         ▼
+   ERC-8004 on-chain (TradeIntent + ValidationCheckpoint)
+```
+
+**What is autonomous (zero human intervention):**
+- RSI signal generation and market state classification
+- Trade intent construction (pair, action, confidence, position size)
+- Risk Manager approve/refuse decision with structured reasoning
+- Refusal proof generation and impact score calculation
+- Trust Ledger append (SHA-256 hash, chain, file write)
+- Circuit breaker triggers (max drawdown 5%, consecutive losses 3)
+- Dead Man's Switch (`cancel-after 60`) — auto-cancels if agent crashes
+
+**What requires human action:**
+- Initial `python3 run_full_pipeline.py` to start the session
+- Kraken paper trading account setup (one-time)
+- ERC-8004 on-chain registration (one-time, already done: Agent #12)
+
+---
+
 ## ERC-8004 Integration
 
 CrossMind is registered on the **ERC-8004 Identity Registry** on Ethereum Sepolia via a shared AgentRegistry:

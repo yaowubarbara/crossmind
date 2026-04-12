@@ -11,9 +11,9 @@ A/B test against identical market data and scenarios confirms the advantage:
 - All-In Bot (50% pos, no guardrails): 10/11 survived, -$2,435 PnL, 23.8% worst drawdown
 - Momentum Chaser (30% pos, no LLM): 7/11 survived, -$6,599 PnL, 19.6% worst drawdown
 
-Each strategy's risk profile is intentional — proving that intelligent constraints outperform unconstrained leverage by 6-16x on the same data.
+Intelligent constraints outperform unconstrained leverage by 6-16x on identical data.
 
-Architecture: four specialized agents collaborate — deterministic Analyst and Strategist for hallucination-free signals, LLM-powered Risk Manager and Adversary for nuanced judgment and red-teaming. A SHA-256 hash-chained Trust Ledger records every decision. Every refusal carries a structured Refusal Impact Score, permanently timestamped.
+Architecture: four specialized agents collaborate — deterministic Analyst and Strategist for hallucination-free signals, LLM-powered Risk Manager and Adversary for nuanced judgment and red-teaming. Every decision runs autonomously — signal, risk evaluation, execute/refuse, Trust Ledger append — with zero human intervention per trade. Every refusal carries a structured Refusal Impact Score, permanently timestamped.
 
 On-chain: registered as ERC-8004 Agent #12 on Ethereum Sepolia (AgentRegistry 0x97b07dDc405B0c28B17559aFFE63BdB3632d0ca3). 246 TradeIntents, 195 validation checkpoints averaging 96/100, HackathonVault allocation claimed. Refusals are verifiable artifacts — not self-reported claims.
 
