@@ -189,12 +189,12 @@ All key figures now aligned across submission_text.md, README.md, and EVIDENCE.m
 | Capital at Risk | **$33,000** |
 | Actual Losses | **$520** |
 | Refusals | **66** |
-| Refusal Precision | **100%** |
+| Refusal Confirmation Rate | **100%** (retrospective, crash scenarios) |
 | Scenarios Survived | **11/11** |
 | Max Drawdown | **2.9%** |
-| On-chain TradeIntents | **11** |
-| Validation Checkpoints | **111** |
-| Validation Score | **93/100** avg |
+| On-chain TradeIntents | **246** |
+| Validation Checkpoints | **195** |
+| Validation Score | **96/100** avg |
 | Agent ID | **#12** |
 
-**Note:** submission_text.md was updated from the old 22.2x/$11,660 figures (which used S&P equity drawdown for COVID) to 28x/$14,700 (which uses BTC/crypto context, consistent with the rest of the project materials).
+**Note:** All figures verified against on-chain contract state (ValidationRegistry.attestationCount, RiskRouter.getIntentNonce) and war_room_report_v2.json. March Correction -26% confirmed against Kraken OHLCV cache ($106K→$78K peak-to-trough).

@@ -1,7 +1,7 @@
 {
   "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
   "name": "CrossMind",
-  "description": "Red-teamed transparent trading agent that proves when refusing to trade protects capital. War Room stress-tested against 6 real market crashes. Every decision — execution and refusal — is recorded in a SHA-256 hash-chained Trust Ledger with verifiable validation artifacts.",
+  "description": "Red-teamed capital protection agent. 28x Proof of Preservation Alpha: $14,700 protected vs $520 lost. War Room stress-tested against 11 real market scenarios (9 crashes + 2 bull markets). 66 refusals, 11/11 survived, 2.9% max drawdown. SHA-256 hash-chained Trust Ledger. ERC-8004 Agent #12 on Ethereum Sepolia.",
   "image": "",
   "active": true,
   "x402Support": false,
@@ -32,17 +32,29 @@
       "fields": ["intent", "risk_check", "decision", "result", "refusal_proof"]
     },
     "warRoom": {
-      "scenarios": 6,
-      "survived": 6,
-      "maxDrawdown": "1.9%"
+      "scenarios": 11,
+      "survived": 11,
+      "maxDrawdown": "2.9%",
+      "totalRefusals": 66,
+      "ppaRatio": "28x",
+      "capitalProtected": 14700,
+      "actualLosses": 520
+    },
+    "onChain": {
+      "agentId": 12,
+      "network": "Ethereum Sepolia",
+      "tradeIntents": 246,
+      "validationCheckpoints": 195,
+      "avgValidationScore": 96,
+      "vaultClaimed": true
     }
   },
   "riskParameters": {
     "maxDrawdown": "5%",
     "maxConsecutiveLosses": 3,
-    "positionSize": "10%",
-    "stopLoss": "3%",
-    "takeProfit": "5%",
+    "positionSize": "5%",
+    "stopLoss": "2%",
+    "takeProfit": "4%",
     "circuitBreaker": true
   }
 }
